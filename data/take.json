@@ -1,0 +1,43 @@
+{
+  "take": {
+    "__compat__": {
+      "__version_added__": "2022.12",
+      "__description__": "Returns elements of an array along an axis.",
+      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.take.html",
+      "__support__": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": null,
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status__": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "axis": {
+      "__compat__": {
+        "__version_added__": "2022.12",
+        "__description__": "Axis over which to select values.",
+        "__support__": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status__": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
