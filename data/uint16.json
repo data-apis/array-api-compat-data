@@ -13,7 +13,7 @@
               "deprecated": false,
               "partial_implementation": false
             },
-            "notes": ""
+            "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
         "dask": null,
@@ -27,7 +27,7 @@
               "deprecated": false,
               "partial_implementation": false
             },
-            "notes": ""
+            "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
         "pytorch": null,

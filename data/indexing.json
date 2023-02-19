@@ -1,15 +1,15 @@
 {
-  "int16": {
+  "indexing": {
     "__compat": {
       "__version_added": "2021.12",
-      "__description": "A 16-bit signed integer data type.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/data_types.html",
+      "__description": "Array indexing.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/indexing.html",
       "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
             "status": {
-              "experimental": false,
+              "experimental": true,
               "deprecated": false,
               "partial_implementation": false
             },
@@ -21,37 +21,17 @@
         "mxnet": null,
         "numpy": [
           {
-            "version_added": "1.22.0",
+            "version_added": "{{NUMPY_VERSION}}",
             "status": {
-              "experimental": false,
+              "experimental": true,
               "deprecated": false,
               "partial_implementation": false
             },
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": [
-          {
-            "version_added": "1.13.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": false
-            },
-            "notes": ""
-          }
-        ],
-        "tensorflow": [
-          {
-            "version_added": "2.11.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": false
-            },
-            "notes": ""
-          }
-        ]
+        "pytorch": null,
+        "tensorflow": null
       },
       "__status": {
         "standard_track": true,
@@ -59,10 +39,10 @@
         "deprecated": false
       }
     },
-    "__eq__": {
+    "single_axis": {
       "__compat": {
         "__version_added": "2021.12",
-        "__description": "Computes the truth value of self == other in order to test for data type object equality.",
+        "__description": "Single-axis indexing.",
         "__support": {
           "cupy": [
             {
@@ -89,9 +69,24 @@
               "notes": ""
             }
           ],
-          "pytorch": [
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "multi_axis": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Single-axis indexing extended to multiple axes by applying single-axis indexing rules along each axis.",
+        "__support": {
+          "cupy": [
             {
-              "version_added": "1.13.0",
+              "version_added": "10.0.0",
               "status": {
                 "experimental": false,
                 "deprecated": false,
@@ -100,9 +95,12 @@
               "notes": ""
             }
           ],
-          "tensorflow": [
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
             {
-              "version_added": "2.11.0",
+              "version_added": "1.22.0",
               "status": {
                 "experimental": false,
                 "deprecated": false,
@@ -110,7 +108,49 @@
               },
               "notes": ""
             }
-          ]
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "boolean": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Boolean array indexing.",
+        "__support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
         }
       },
       "__status": {
