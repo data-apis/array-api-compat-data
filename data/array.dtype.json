@@ -1,0 +1,43 @@
+{
+  "array.dtype": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Data type of the array elements.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.dtype.html",
+      "__support": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      }
+    },
+    "__status": {
+      "standard_track": true,
+      "experimental": false,
+      "deprecated": false
+    }
+  }
+}

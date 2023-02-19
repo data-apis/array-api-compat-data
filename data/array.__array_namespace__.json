@@ -1,0 +1,83 @@
+{
+  "array.__array_namespace__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns an object that has all the array API functions on it.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.__array__namespace__.html",
+      "__support": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "api_version": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "String representing the version of the array API specification to be returned, in 'YYYY.MM' form.",
+        "__support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
