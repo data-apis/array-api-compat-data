@@ -1,5 +1,5 @@
 {
-  "fftshift": {
+  "fft.fftshift": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Shift the zero-frequency component to the center of the spectrum.",

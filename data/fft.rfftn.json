@@ -1,5 +1,5 @@
 {
-  "rfftn": {
+  "fft.rfftn": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Computes the n-dimensional discrete Fourier transform for real-valued input.",

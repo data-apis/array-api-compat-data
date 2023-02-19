@@ -1,5 +1,5 @@
 {
-  "rfftfreq": {
+  "fft.rfftfreq": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Returns the discrete Fourier transform sample frequencies (for rfft and irfft).",

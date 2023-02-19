@@ -1,5 +1,5 @@
 {
-  "irfft": {
+  "fft.irfft": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Computes the one-dimensional inverse of rfft for complex-valued input.",

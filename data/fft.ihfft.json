@@ -1,5 +1,5 @@
 {
-  "ihfft": {
+  "fft.ihfft": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Computes the one-dimensional inverse discrete Fourier transform of a signal with Hermitian symmetry.",

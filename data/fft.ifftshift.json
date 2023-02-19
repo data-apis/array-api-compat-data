@@ -1,5 +1,5 @@
 {
-  "ifftshift": {
+  "fft.ifftshift": {
     "__compat": {
       "__version_added": "2022.12",
       "__description": "Inverse of fftshift.",
