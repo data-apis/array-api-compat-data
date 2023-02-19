@@ -1,9 +1,9 @@
 {
-  "array.__add__": {
+  "array.__rshift__": {
     "__compat": {
       "version_added": "2021.12",
-      "description": "Calculates the sum for each element of an array instance with the respective element of another array.",
-      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.__add__.html",
+      "description": "Evaluates self_i >> other_i for each element of an array instance with the respective element of another array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.__rshift__.html",
       "support": {
         "cupy": [
           {
