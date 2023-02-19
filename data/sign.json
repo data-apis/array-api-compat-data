@@ -1,0 +1,43 @@
+{
+  "sign": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns an indication of the sign of a number for each element of an input array.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.sign.html",
+      "__support": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `cupy.array_api`."
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

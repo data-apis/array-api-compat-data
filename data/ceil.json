@@ -1,0 +1,43 @@
+{
+  "ceil": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Rounds each element of an input array to the smallest (i.e., closest to -infinity) integer-valued number that is not less than the element value.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.ceil.html",
+      "__support": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `cupy.array_api`."
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

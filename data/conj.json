@@ -1,0 +1,23 @@
+{
+  "conj": {
+    "__compat": {
+      "__version_added": "2022.12",
+      "__description": "Returns the complex conjugate for each element of an input array.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.conj.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": null,
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
