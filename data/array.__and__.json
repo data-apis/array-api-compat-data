@@ -1,10 +1,10 @@
 {
   "array.__and__": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Evaluates self_i & other_i for each element of an array instance with the respective element of the array other.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.__and__.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Evaluates self_i & other_i for each element of an array instance with the respective element of the array other.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.__and__.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -32,12 +32,12 @@
         ],
         "pytorch": null,
         "tensorflow": null
+      },
+      "status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
       }
-    },
-    "__status": {
-      "standard_track": true,
-      "experimental": false,
-      "deprecated": false
     }
   }
 }

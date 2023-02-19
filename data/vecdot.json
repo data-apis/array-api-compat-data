@@ -1,10 +1,10 @@
 {
   "vecdot": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Computes the (vector) dot product of two arrays.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.vecdot.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Computes the (vector) dot product of two arrays.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.vecdot.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Axis over which to compute the dot product.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Axis over which to compute the dot product.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

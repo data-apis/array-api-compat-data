@@ -1,10 +1,10 @@
 {
   "fft.rfftfreq": {
     "__compat": {
-      "__version_added": "2022.12",
-      "__description": "Returns the discrete Fourier transform sample frequencies (for rfft and irfft).",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.rfftfreq.html",
-      "__support": {
+      "version_added": "2022.12",
+      "description": "Returns the discrete Fourier transform sample frequencies (for rfft and irfft).",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.rfftfreq.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -13,7 +13,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -21,9 +21,9 @@
     },
     "d": {
       "__compat": {
-        "__version_added": "2022.12",
-        "__description": "Sample spacing between individual samples of the Fourier transform input.",
-        "__support": {
+        "version_added": "2022.12",
+        "description": "Sample spacing between individual samples of the Fourier transform input.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -33,7 +33,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "device": {
       "__compat": {
-        "__version_added": "2022.12",
-        "__description": "Device on which to place the created array.",
-        "__support": {
+        "version_added": "2022.12",
+        "description": "Device on which to place the created array.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -53,7 +53,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

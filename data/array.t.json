@@ -1,9 +1,9 @@
 {
   "array.T": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Transpose of the array.",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Transpose of the array.",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -31,12 +31,12 @@
         ],
         "pytorch": null,
         "tensorflow": null
+      },
+      "status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
       }
-    },
-    "__status": {
-      "standard_track": true,
-      "experimental": false,
-      "deprecated": false
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "complex128": {
     "__compat": {
-      "__version_added": "2022.12",
-      "__description": "Double-precision (128-bit) complex floating-point number whose real and imaginary components must be IEEE 754 double-precision (64-bit) binary floating-point numbers.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/data_types.html",
-      "__support": {
+      "version_added": "2022.12",
+      "description": "Double-precision (128-bit) complex floating-point number whose real and imaginary components must be IEEE 754 double-precision (64-bit) binary floating-point numbers.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/data_types.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -33,7 +33,7 @@
           }
         ]
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "__eq__": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Computes the truth value of self == other in order to test for data type object equality.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Computes the truth value of self == other in order to test for data type object equality.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -73,7 +73,7 @@
           ]
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

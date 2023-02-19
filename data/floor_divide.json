@@ -1,10 +1,10 @@
 {
   "floor_divide": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Rounds the result of dividing each element of an input array by the respective element of a second input array to the greatest (i.e., closest to +infinity) integer-value number that is not greater than the division result.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.floor_divide.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Rounds the result of dividing each element of an input array by the respective element of a second input array to the greatest (i.e., closest to +infinity) integer-value number that is not greater than the division result.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.floor_divide.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

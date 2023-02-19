@@ -1,10 +1,10 @@
 {
   "max": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Calculates the maximum value of an input array.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.max.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Calculates the maximum value of an input array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.max.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Axis or axes along which maximum values must be computed.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Axis or axes along which maximum values must be computed.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "keepdims": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean indicating whether the reduced axes (dimensions) must be included in the result as singleton dimensions.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean indicating whether the reduced axes (dimensions) must be included in the result as singleton dimensions.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

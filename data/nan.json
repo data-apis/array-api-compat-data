@@ -1,10 +1,10 @@
 {
   "nan": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "IEEE 754 floating-point representation of Not a Number (NaN).",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.nan.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "IEEE 754 floating-point representation of Not a Number (NaN).",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.nan.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

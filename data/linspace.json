@@ -1,10 +1,10 @@
 {
   "linspace": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Returns evenly spaced numbers over a specified interval.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.linspace.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Returns evenly spaced numbers over a specified interval.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.linspace.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "num": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Number of samples.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Number of samples.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "dtype": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Output array data type.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Output array data type.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -121,9 +121,9 @@
     },
     "device": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Device on which to place the created array.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Device on which to place the created array.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -153,7 +153,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -161,9 +161,9 @@
     },
     "endpoint": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean indicating whether to include stop in the interval.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean indicating whether to include stop in the interval.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -193,7 +193,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

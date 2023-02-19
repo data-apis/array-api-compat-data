@@ -1,10 +1,10 @@
 {
   "eye": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Returns a two-dimensional array with ones on the kth diagonal and zeros elsewhere.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.eye.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Returns a two-dimensional array with ones on the kth diagonal and zeros elsewhere.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.eye.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "k": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Index of the diagonal.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Index of the diagonal.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "dtype": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Output array data type.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Output array data type.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -121,9 +121,9 @@
     },
     "device": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Device on which to place the created array.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Device on which to place the created array.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -153,7 +153,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

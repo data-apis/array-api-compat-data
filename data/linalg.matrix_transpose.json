@@ -1,10 +1,10 @@
 {
   "linalg.matrix_transpose": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Transposes a matrix (or a stack of matrices).",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.matrix_transpose.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Transposes a matrix (or a stack of matrices).",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.matrix_transpose.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -23,7 +23,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

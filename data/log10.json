@@ -1,10 +1,10 @@
 {
   "log10": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Calculates an implementation-dependent approximation to the base 10 logarithm for each element of an input array.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.log10.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Calculates an implementation-dependent approximation to the base 10 logarithm for each element of an input array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.log10.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

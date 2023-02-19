@@ -1,10 +1,10 @@
 {
   "int32": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "A 32-bit signed integer data type.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/data_types.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "A 32-bit signed integer data type.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/data_types.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -53,7 +53,7 @@
           }
         ]
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -61,9 +61,9 @@
     },
     "__eq__": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Computes the truth value of self == other in order to test for data type object equality.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Computes the truth value of self == other in order to test for data type object equality.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           ]
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

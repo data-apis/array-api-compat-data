@@ -1,10 +1,10 @@
 {
   "isfinite": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Tests each element of an input array to determine if finite.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.isfinite.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Tests each element of an input array to determine if finite.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.isfinite.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

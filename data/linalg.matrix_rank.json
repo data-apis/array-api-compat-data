@@ -1,10 +1,10 @@
 {
   "linalg.matrix_rank": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Returns the rank (i.e., number of non-zero singular values) of a matrix (or a stack of matrices).",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.matrix_rank.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Returns the rank (i.e., number of non-zero singular values) of a matrix (or a stack of matrices).",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.matrix_rank.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -23,7 +23,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -31,9 +31,9 @@
     },
     "rtol": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Relative tolerance for small singular values.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Relative tolerance for small singular values.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -53,7 +53,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

@@ -1,10 +1,10 @@
 {
   "array.device": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Hardware device the array data resides on.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.device.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Hardware device the array data resides on.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.device.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -32,12 +32,12 @@
         ],
         "pytorch": null,
         "tensorflow": null
+      },
+      "status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
       }
-    },
-    "__status": {
-      "standard_track": true,
-      "experimental": false,
-      "deprecated": false
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "reshape": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Reshapes an array without changing its data.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.reshape.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Reshapes an array without changing its data.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.reshape.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "shape": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "A new shape compatible with the original shape.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "A new shape compatible with the original shape.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "copy": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean indicating whether or not to copy the input array.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean indicating whether or not to copy the input array.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -93,7 +93,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

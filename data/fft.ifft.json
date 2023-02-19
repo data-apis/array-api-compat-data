@@ -1,10 +1,10 @@
 {
   "fft.ifft": {
     "__compat": {
-      "__version_added": "2022.12",
-      "__description": "Computes the one-dimensional inverse discrete Fourier transform.",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.ifft.html",
-      "__support": {
+      "version_added": "2022.12",
+      "description": "Computes the one-dimensional inverse discrete Fourier transform.",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.ifft.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -13,7 +13,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -21,9 +21,9 @@
     },
     "n": {
       "__compat": {
-        "__version_added": "2022.12",
-        "__description": "Length of the transformed axis of the output.",
-        "__support": {
+        "version_added": "2022.12",
+        "description": "Length of the transformed axis of the output.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -33,7 +33,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "axis": {
       "__compat": {
-        "__version_added": "2022.12",
-        "__description": "Axis (dimension) over which to compute the inverse Fourier transform.",
-        "__support": {
+        "version_added": "2022.12",
+        "description": "Axis (dimension) over which to compute the inverse Fourier transform.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -53,7 +53,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -61,9 +61,9 @@
     },
     "norm": {
       "__compat": {
-        "__version_added": "2022.12",
-        "__description": "Normalization mode.",
-        "__support": {
+        "version_added": "2022.12",
+        "description": "Normalization mode.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

@@ -1,10 +1,10 @@
 {
   "logaddexp": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Calculates the logarithm of the sum of exponentiations log(exp(x1) + exp(x2)) for each element of a first input array with the respective element of a second input array.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.logaddexp.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Calculates the logarithm of the sum of exponentiations log(exp(x1) + exp(x2)) for each element of a first input array with the respective element of a second input array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.logaddexp.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

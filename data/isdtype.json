@@ -1,10 +1,10 @@
 {
   "isdtype": {
     "__compat": {
-      "__version_added": "2022.12",
-      "__description": "Returns a boolean indicating whether a provided dtype is of a specified data type \"kind\".",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.isdtype.html",
-      "__support": {
+      "version_added": "2022.12",
+      "description": "Returns a boolean indicating whether a provided dtype is of a specified data type \"kind\".",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.isdtype.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -13,7 +13,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

@@ -1,10 +1,10 @@
 {
   "permute_dims": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Permutes the axes (dimensions) of an array.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.permute_dims.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Permutes the axes (dimensions) of an array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.permute_dims.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "axes": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Tuple containing a permutation of (0, 1, ..., N-1) where N is the number of axes (dimensions) of an input array.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Tuple containing a permutation of (0, 1, ..., N-1) where N is the number of axes (dimensions) of an input array.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

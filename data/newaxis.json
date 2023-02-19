@@ -1,10 +1,10 @@
 {
   "newaxis": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "An alias for ``None`` which is useful for indexing arrays.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.newaxis.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "An alias for ``None`` which is useful for indexing arrays.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.newaxis.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

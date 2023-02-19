@@ -1,10 +1,10 @@
 {
   "linalg.vector_norm": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Computes the vector norm of a vector (or batch of vectors).",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.vector_norm.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Computes the vector norm of a vector (or batch of vectors).",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.vector_norm.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -23,7 +23,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -31,9 +31,9 @@
     },
     "axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Axis or axes along which to compute vector norms.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Axis or axes along which to compute vector norms.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -53,7 +53,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -61,9 +61,9 @@
     },
     "keepdims": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean indicating whether axes (dimensions) must be included in the result as singleton dimensions.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean indicating whether axes (dimensions) must be included in the result as singleton dimensions.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -83,7 +83,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -91,9 +91,9 @@
     },
     "ord": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Order of the norm.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Order of the norm.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

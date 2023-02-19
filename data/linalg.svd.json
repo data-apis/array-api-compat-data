@@ -1,10 +1,10 @@
 {
   "linalg.svd": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Returns a singular value decomposition (SVD) of a matrix (or a stack of matrices).",
-      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.svd.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Returns a singular value decomposition (SVD) of a matrix (or a stack of matrices).",
+      "spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.svd.html",
+      "support": {
         "cupy": null,
         "dask": null,
         "jax": null,
@@ -23,7 +23,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -31,9 +31,9 @@
     },
     "full_matrices": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean indicating whether to compute full-sized U and Vh or to compute on the leading singular vectors.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean indicating whether to compute full-sized U and Vh or to compute on the leading singular vectors.",
+        "support": {
           "cupy": null,
           "dask": null,
           "jax": null,
@@ -53,7 +53,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

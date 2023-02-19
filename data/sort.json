@@ -1,10 +1,10 @@
 {
   "sort": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Returns a sorted copy of an input array.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.sort.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Returns a sorted copy of an input array.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.sort.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Axis along which to sort.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Axis along which to sort.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "descending": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Sort order.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Sort order.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -121,9 +121,9 @@
     },
     "stable": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Sort stability.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Sort stability.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -153,7 +153,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

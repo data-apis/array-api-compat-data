@@ -1,10 +1,10 @@
 {
   "indexing": {
     "__compat": {
-      "__version_added": "2021.12",
-      "__description": "Array indexing.",
-      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/indexing.html",
-      "__support": {
+      "version_added": "2021.12",
+      "description": "Array indexing.",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/indexing.html",
+      "support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -41,9 +41,9 @@
     },
     "single_axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Single-axis indexing.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Single-axis indexing.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -81,9 +81,9 @@
     },
     "multi_axis": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Single-axis indexing extended to multiple axes by applying single-axis indexing rules along each axis.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Single-axis indexing extended to multiple axes by applying single-axis indexing rules along each axis.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
@@ -121,9 +121,9 @@
     },
     "boolean": {
       "__compat": {
-        "__version_added": "2021.12",
-        "__description": "Boolean array indexing.",
-        "__support": {
+        "version_added": "2021.12",
+        "description": "Boolean array indexing.",
+        "support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -153,7 +153,7 @@
           "tensorflow": null
         }
       },
-      "__status": {
+      "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
