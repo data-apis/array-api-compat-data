@@ -1,0 +1,83 @@
+{
+  "trace": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns the sum along the specified diagonals of a matrix (or a stack of matrices).",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.trace.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "offset": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Offset specifying the off-diagonal relative to the main diagonal.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "dtype": {
+      "__compat": {
+        "__version_added": "2022.12",
+        "__description": "Data type of the returned array.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

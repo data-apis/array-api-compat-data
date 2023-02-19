@@ -1,0 +1,33 @@
+{
+  "eigh": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns an eigenvalue decomposition of a complex Hermitian or real symmetric matrix (or a stack of matrices).",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.eigh.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

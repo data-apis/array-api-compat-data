@@ -1,0 +1,33 @@
+{
+  "solve": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns the solution of a square system of linear equations with a unique solution.",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.solve.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

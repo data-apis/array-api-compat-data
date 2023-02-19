@@ -1,0 +1,93 @@
+{
+  "matrix_norm": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Computes the matrix norm of a matrix (or a stack of matrices).",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.linalg.matrix_norm.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "keepdims": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Boolean indicating whether the last two axes (dimensions) must be included in the result as singleton dimensions.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "ord": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Order of the norm.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
