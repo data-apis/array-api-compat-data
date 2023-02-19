@@ -1,0 +1,163 @@
+{
+  "std": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Calculates the standard deviation of input array elements.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.std.html",
+      "__support": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `cupy.array_api`."
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "axis": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Axis or axes along which standard deviations must be computed.",
+        "__support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "correction": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Degrees of freedom adjustment.",
+        "__support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "keepdims": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Boolean indicating whether the reduced axes (dimensions) must be included in the result as singleton dimensions.",
+        "__support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
