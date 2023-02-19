@@ -1,5 +1,5 @@
 {
-  "svd": {
+  "linalg.svd": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns a singular value decomposition (SVD) of a matrix (or a stack of matrices).",

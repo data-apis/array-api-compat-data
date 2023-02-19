@@ -1,5 +1,5 @@
 {
-  "vecdot": {
+  "linalg.vecdot": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Computes the (vector) dot product of two arrays.",

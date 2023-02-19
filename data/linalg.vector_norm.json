@@ -1,5 +1,5 @@
 {
-  "vector_norm": {
+  "linalg.vector_norm": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Computes the vector norm of a vector (or batch of vectors).",

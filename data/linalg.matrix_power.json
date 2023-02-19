@@ -1,5 +1,5 @@
 {
-  "matrix_power": {
+  "linalg.matrix_power": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Raises a square matrix (or a stack of square matrices) to an integer power.",

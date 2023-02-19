@@ -1,5 +1,5 @@
 {
-  "solve": {
+  "linalg.solve": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns the solution of a square system of linear equations with a unique solution.",

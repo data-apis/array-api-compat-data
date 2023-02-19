@@ -1,5 +1,5 @@
 {
-  "slogdet": {
+  "linalg.slogdet": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns the sign and the natural logarithm of the absolute value of the determinant of a square matrix (or a stack of square matrices).",

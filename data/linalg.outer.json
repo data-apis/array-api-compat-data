@@ -1,5 +1,5 @@
 {
-  "outer": {
+  "linalg.outer": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns the outer product of two vectors.",

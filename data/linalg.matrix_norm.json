@@ -1,5 +1,5 @@
 {
-  "matrix_norm": {
+  "linalg.matrix_norm": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Computes the matrix norm of a matrix (or a stack of matrices).",

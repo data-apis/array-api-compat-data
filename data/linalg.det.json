@@ -1,5 +1,5 @@
 {
-  "det": {
+  "linalg.det": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns the determinant of a square matrix (or a stack of square matrices).",

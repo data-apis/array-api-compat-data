@@ -1,5 +1,5 @@
 {
-  "inv": {
+  "linalg.inv": {
     "__compat": {
       "__version_added": "2021.12",
       "__description": "Returns the multiplicative inverse of a square matrix (or a stack of square matrices).",
