@@ -1,0 +1,23 @@
+{
+  "__array_api_version__": {
+    "__compat": {
+      "__version_added": "2022.12",
+      "__description": "String representing the version of the array API specification which the conforming implementation adheres to.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.__array_api_version__.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": null,
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
