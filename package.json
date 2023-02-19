@@ -1,0 +1,30 @@
+{
+  "name": "array-api-compat-data",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "TODO",
+  "author": {
+    "name": "TODO",
+    "url": "TODO"
+  },
+  "contributors": [
+    {
+      "name": "TODO",
+      "url": "TODO"
+    }
+  ],
+  "main": "",
+  "directories": {},
+  "scripts": {},
+  "homepage": "https://github.com/data-apis/array-api-compat-data",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/data-apis/array-api-compat-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/data-apis/array-api-compat-data/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": []
+}
