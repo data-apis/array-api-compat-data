@@ -71,12 +71,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "descending": {
@@ -111,12 +111,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "stable": {
@@ -151,12 +151,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     }
   }

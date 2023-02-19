@@ -31,12 +31,12 @@
           "numpy": null,
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "axis": {
@@ -51,12 +51,12 @@
           "numpy": null,
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "norm": {
@@ -71,12 +71,12 @@
           "numpy": null,
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     }
   }

@@ -31,12 +31,12 @@
           "numpy": null,
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "device": {
@@ -51,12 +51,12 @@
           "numpy": null,
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     }
   }

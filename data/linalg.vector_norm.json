@@ -51,12 +51,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "keepdims": {
@@ -81,12 +81,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     },
     "ord": {
@@ -111,12 +111,12 @@
           ],
           "pytorch": null,
           "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     }
   }

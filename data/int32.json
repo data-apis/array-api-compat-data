@@ -111,12 +111,12 @@
               "notes": ""
             }
           ]
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
         }
-      },
-      "status": {
-        "standard_track": true,
-        "experimental": false,
-        "deprecated": false
       }
     }
   }
