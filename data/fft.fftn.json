@@ -1,0 +1,83 @@
+{
+  "fftn": {
+    "__compat": {
+      "__version_added": "2022.12",
+      "__description": "Computes the n-dimensional discrete Fourier transform.",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.fftn.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": null,
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "s": {
+      "__compat": {
+        "__version_added": "2022.12",
+        "__description": "Size of each transformed axis of the output.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "axes": {
+      "__compat": {
+        "__version_added": "2022.12",
+        "__description": "Axes (dimensions) over which to compute the Fourier transform.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "norm": {
+      "__compat": {
+        "__version_added": "2022.12",
+        "__description": "Normalization mode.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ifftshift": {
+    "__compat": {
+      "__version_added": "2022.12",
+      "__description": "Inverse of fftshift.",
+      "__spec_url": "https://data-apis.org/array-api/latest/extensions/generated/array_api.fft.ifftshift.html",
+      "__support": {
+        "cupy": null,
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": null,
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "axes": {
+      "__compat": {
+        "__version_added": "2022.12",
+        "__description": "Axes over which to perform the inverse shift.",
+        "__support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
