@@ -21,7 +21,7 @@
         "mxnet": null,
         "numpy": [
           {
-            "version_added": "{{NUMPY_VERSION}}",
+            "version_added": "1.22.0",
             "status": {
               "experimental": true,
               "deprecated": false,
