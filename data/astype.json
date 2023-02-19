@@ -1,10 +1,10 @@
 {
   "astype": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Copies an array to a specified data type irrespective of Type Promotion Rules rules.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.astype.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Copies an array to a specified data type irrespective of Type Promotion Rules rules.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.astype.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "copy": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Specifies whether to copy an array when the specified dtype matches the data type of the input array.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Specifies whether to copy an array when the specified dtype matches the data type of the input array.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

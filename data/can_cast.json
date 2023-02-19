@@ -1,10 +1,10 @@
 {
   "can_cast": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Determines if one data type can be cast to another data type according Type Promotion Rules rules.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.can_cast.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Determines if one data type can be cast to another data type according Type Promotion Rules rules.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.can_cast.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

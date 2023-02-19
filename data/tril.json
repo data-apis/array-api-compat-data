@@ -1,10 +1,10 @@
 {
   "tril": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Returns the lower triangular part of a matrix (or a stack of matrices).",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.tril.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns the lower triangular part of a matrix (or a stack of matrices).",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.tril.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "k": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Diagonal above which to zero elements.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Diagonal above which to zero elements.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

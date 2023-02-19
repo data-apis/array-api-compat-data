@@ -1,10 +1,10 @@
 {
   "{{API}}": {
-    "__compat__": {
-      "__version_added__": "{{VERSION}}",
-      "__description__": "{{DESC}}",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.{{API}}.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "{{VERSION}}",
+      "__description": "{{DESC}}",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.{{API}}.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "{{CUPY_VERSION}}",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "{{KWARG}}": {
-      "__compat__": {
-        "__version_added__": "{{KWARG_VERSION}}",
-        "__description__": "{{KWARG_DESC}}",
-        "__support__": {
+      "__compat": {
+        "__version_added": "{{KWARG_VERSION}}",
+        "__description": "{{KWARG_DESC}}",
+        "__support": {
           "cupy": [
             {
               "version_added": "{{CUPY_VERSION}}",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

@@ -1,10 +1,10 @@
 {
   "ones": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Returns a new array having a specified shape and filled with ones.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.ones.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns a new array having a specified shape and filled with ones.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.ones.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "dtype": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Output array data type.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Output array data type.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,17 +73,17 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "device": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Device on which to place the created array.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Device on which to place the created array.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

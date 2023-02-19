@@ -1,10 +1,10 @@
 {
   "nonzero": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Returns the indices of the array elements which are non-zero.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.nonzero.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Returns the indices of the array elements which are non-zero.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.nonzero.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,7 +33,7 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

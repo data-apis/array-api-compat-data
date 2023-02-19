@@ -1,10 +1,10 @@
 {
   "broadcast_to": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Broadcasts an array to a specified shape.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.broadcast_to.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Broadcasts an array to a specified shape.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.broadcast_to.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "shape": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Array shape.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Array shape.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

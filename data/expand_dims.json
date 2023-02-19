@@ -1,10 +1,10 @@
 {
   "expand_dims": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Expands the shape of an array by inserting a new axis (dimension) of size one at a specified position.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.expand_dims.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Expands the shape of an array by inserting a new axis (dimension) of size one at a specified position.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.expand_dims.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "axis": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Axis position.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Axis position.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,7 +73,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false

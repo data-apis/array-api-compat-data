@@ -1,10 +1,10 @@
 {
   "roll": {
-    "__compat__": {
-      "__version_added__": "2021.12",
-      "__description__": "Rolls array elements along a specified axis.",
-      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.roll.html",
-      "__support__": {
+    "__compat": {
+      "__version_added": "2021.12",
+      "__description": "Rolls array elements along a specified axis.",
+      "__spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.roll.html",
+      "__support": {
         "cupy": [
           {
             "version_added": "10.0.0",
@@ -33,17 +33,17 @@
         "pytorch": null,
         "tensorflow": null
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "shift": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Number of places by which the elements are shifted.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Number of places by which the elements are shifted.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -73,17 +73,17 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
       }
     },
     "axes": {
-      "__compat__": {
-        "__version_added__": "2021.12",
-        "__description__": "Axis (or axes) along which elements to shift.",
-        "__support__": {
+      "__compat": {
+        "__version_added": "2021.12",
+        "__description": "Axis (or axes) along which elements to shift.",
+        "__support": {
           "cupy": [
             {
               "version_added": "10.0.0",
@@ -113,7 +113,7 @@
           "tensorflow": null
         }
       },
-      "__status__": {
+      "__status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
