@@ -1,0 +1,123 @@
+{
+  "all": {
+    "__compat__": {
+      "__version_added__": "2021.12",
+      "__description__": "Tests whether all input array elements evaluate to True along a specified axis.",
+      "__spec_url__": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.all.html",
+      "__support__": {
+        "cupy": [
+          {
+            "version_added": "10.0.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `cupy.array_api`."
+          }
+        ],
+        "dask": null,
+        "jax": null,
+        "mxnet": null,
+        "numpy": [
+          {
+            "version_added": "1.22.0",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally available via `numpy.array_api`."
+          }
+        ],
+        "pytorch": null,
+        "tensorflow": null
+      },
+      "__status__": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "axis": {
+      "__compat__": {
+        "__version_added__": "2021.12",
+        "__description__": "Axis or axes along which to perform a logical AND reduction.",
+        "__support__": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status__": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    },
+    "keepdims": {
+      "__compat__": {
+        "__version_added__": "2021.12",
+        "__description__": "Boolean indicating whether the reduced axes (dimensions) must be included in the result as singleton dimensions.",
+        "__support__": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "pytorch": null,
+          "tensorflow": null
+        }
+      },
+      "__status__": {
+        "standard_track": true,
+        "experimental": false,
+        "deprecated": false
+      }
+    }
+  }
+}
