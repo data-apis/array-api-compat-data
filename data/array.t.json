@@ -2,6 +2,7 @@
   "array.T": {
     "__compat": {
       "version_added": "2021.12",
+      "spec_url": "https://data-apis.org/array-api/latest/API_specification/generated/array_api.array.T.html",
       "description": "Transpose of the array.",
       "support": {
         "cupy": [
