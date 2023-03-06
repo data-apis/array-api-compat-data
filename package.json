@@ -17,7 +17,7 @@
   "directories": {},
   "scripts": {
     "build": "npm run build:index",
-    "build:index": "node ./scripts/build.js > ./docs/index.html"
+    "build:index": "node ./scripts/build_index.js > ./docs/index.html"
   },
   "homepage": "https://github.com/data-apis/array-api-compat-data",
   "repository": {

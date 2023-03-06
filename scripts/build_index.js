@@ -95,7 +95,7 @@ function render( data, maxVersion ) {
 	url = d.__compat.spec_url;
 
 	// Render compatibility data:
-	out = replace( TMPL.COMPAT_SECTION, '{{NAME}}', name );
+	out = replace( TMPL.COMPAT_WRAPPER, '{{NAME}}', name );
 	out = replace( out, '{{URL}}', url );
 	out = replace( out, '{{TABLE}}', renderCompat( d, name, maxVersion ) );
 	out = replace( out, '{{LEGEND}}', TMPL.LEGEND );
