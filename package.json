@@ -16,8 +16,13 @@
   "main": "",
   "directories": {},
   "scripts": {
-    "build": "npm run build:index",
-    "build:index": "node ./scripts/build_index.js > ./docs/index.html"
+    "build": "npm run build:index && npm run build:css && npm run build:embed",
+    "build:index": "node ./scripts/build_index.js > ./docs/index.html",
+    "build:embed": "npm run clean:embed && mkdir -p ./build/embed && node ./scripts/build_embed.js",
+    "build:css": "npm run clean:css && mkdir ./docs/css && find ./scripts/css -name '*.css' -exec cp -p '{}' './docs/css' ';'",
+    "clean": "npm run clean:css && npm run clean:embed",
+    "clean:css": "rm -rf ./docs/css",
+    "clean:embed": "rm -rf ./build/embed"
   },
   "homepage": "https://github.com/data-apis/array-api-compat-data",
   "repository": {
@@ -31,8 +36,10 @@
     "@stdlib/fs-read-dir": "^0.0.8",
     "@stdlib/fs-read-file": "^0.0.8",
     "@stdlib/fs-read-json": "^0.0.7",
+    "@stdlib/fs-write-file": "^0.0.8",
     "@stdlib/string-base-lowercase": "^0.1.0",
     "@stdlib/string-base-uppercase": "^0.0.2",
+    "@stdlib/string-format": "^0.0.3",
     "@stdlib/string-replace": "^0.0.11",
     "@stdlib/utils-keys": "^0.0.7"
   },
