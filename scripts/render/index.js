@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
 * @license MIT
 *
@@ -24,47 +22,55 @@
 * SOFTWARE.
 */
 
-/* eslint-disable node/no-unpublished-require */
+/* eslint-disable no-underscore-dangle, node/no-unpublished-require */
 
 'use strict';
 
 // MODULES //
 
+var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
-var DATA = require( './../data' );
-var TMPL = require( './templates' );
-var render = require( './render' );
-
-
-// VARIABLES //
-
-// Specify a maximum version:
-var MAX_VERSION = '*';
+var TMPL = require( './../templates' );
+var renderCompat = require( './compat.js' );
 
 
 // MAIN //
 
 /**
-* Main execution sequence.
+* Renders HTML content for provided compatibility data.
 *
 * @private
-* @throws {Error} unexpected error
+* @param {Object} data - compatibility data
+* @param {string} maxVersion - maximum version
+* @returns {(string|null)} HTML string
 */
-function main() {
-	var html;
-	var tmp;
-	var f;
-	var i;
+function render( data, maxVersion ) {
+	var name;
+	var out;
+	var url;
+	var d;
 
-	tmp = [];
-	for ( i = 0; i < DATA.length; i++ ) {
-		html = render( DATA[ i ], MAX_VERSION );
-		if ( html ) {
-			tmp.push( html );
-		}
+	// Get the API name:
+	name = objectKeys( data )[ 0 ];
+	d = data[ name ];
+
+	// Check whether the API satisfies version constraints:
+	if ( maxVersion !== '*' && d.__compat.version_added > maxVersion ) {
+		return null;
 	}
-	f = replace( TMPL.INDEX, '{{TABLES}}', tmp.join( '\n' ) );
-	console.log( f );
+	// Get the specification URL:
+	url = d.__compat.spec_url;
+
+	// Render compatibility data:
+	out = replace( TMPL.COMPAT_WRAPPER, '{{NAME}}', name );
+	out = replace( out, '{{URL}}', url );
+	out = replace( out, '{{TABLE}}', renderCompat( d, name, maxVersion ) );
+	out = replace( out, '{{LEGEND}}', TMPL.LEGEND );
+
+	return out;
 }
 
-main();
+
+// EXPORTS //
+
+module.exports = render;

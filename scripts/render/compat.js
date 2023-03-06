@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
 * @license MIT
 *
@@ -33,8 +31,8 @@
 var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
 var lowercase = require( '@stdlib/string-base-lowercase' );
-var TMPL = require( './templates' );
-var LIBRARIES = require( './libraries.json' );
+var TMPL = require( './../templates' );
+var LIBRARIES = require( './../libraries.json' );
 
 
 // FUNCTIONS //
@@ -52,38 +50,6 @@ function libraryName( name ) {
 		return o.name;
 	}
 	return name;
-}
-
-/**
-* Renders a compatibility table.
-*
-* @private
-* @param {Object} data - compatibility data
-* @param {string} name - API name
-* @param {string} maxVersion - maximum version
-* @returns {string} HTML string
-*/
-function renderCompat( data, name, maxVersion ) {
-	var table;
-	var head;
-	var body;
-	var libs;
-
-	// Get the list of libraries:
-	libs = objectKeys( data.__compat.support );
-
-	// Render a table head:
-	head = renderHead( libs );
-
-	// Render the table body:
-	body = renderBody( data, libs, name, maxVersion );
-
-	// Render the table:
-	table = replace( TMPL.TABLE, '{{HEAD}}', head );
-	table = replace( table, '{{BODY}}', body );
-
-	// Wrap the table in a container element:
-	return replace( TMPL.TABLE_CONTAINER, '{{TABLE}}', table );
 }
 
 /**
@@ -215,40 +181,38 @@ function renderBody( data, columns, name, maxVersion ) {
 // MAIN //
 
 /**
-* Renders HTML content for provided compatibility data.
+* Renders a compatibility table.
 *
 * @private
 * @param {Object} data - compatibility data
+* @param {string} name - API name
 * @param {string} maxVersion - maximum version
-* @returns {(string|null)} HTML string
+* @returns {string} HTML string
 */
-function render( data, maxVersion ) {
-	var name;
-	var out;
-	var url;
-	var d;
+function renderCompat( data, name, maxVersion ) {
+	var table;
+	var head;
+	var body;
+	var libs;
 
-	// Get the API name:
-	name = objectKeys( data )[ 0 ];
-	d = data[ name ];
+	// Get the list of libraries:
+	libs = objectKeys( data.__compat.support );
 
-	// Check whether the API satisfies version constraints:
-	if ( maxVersion !== '*' && d.__compat.version_added > maxVersion ) {
-		return null;
-	}
-	// Get the specification URL:
-	url = d.__compat.spec_url;
+	// Render a table head:
+	head = renderHead( libs );
 
-	// Render compatibility data:
-	out = replace( TMPL.COMPAT_WRAPPER, '{{NAME}}', name );
-	out = replace( out, '{{URL}}', url );
-	out = replace( out, '{{TABLE}}', renderCompat( d, name, maxVersion ) );
-	out = replace( out, '{{LEGEND}}', TMPL.LEGEND );
+	// Render the table body:
+	body = renderBody( data, libs, name, maxVersion );
 
-	return out;
+	// Render the table:
+	table = replace( TMPL.TABLE, '{{HEAD}}', head );
+	table = replace( table, '{{BODY}}', body );
+
+	// Wrap the table in a container element:
+	return replace( TMPL.TABLE_CONTAINER, '{{TABLE}}', table );
 }
 
 
 // EXPORTS //
 
-module.exports = render;
+module.exports = renderCompat;
