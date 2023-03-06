@@ -1,0 +1,30 @@
+{
+  "cupy": {
+    "name": "CuPy",
+    "releases": []
+  },
+  "dask":  {
+    "name": "Dask",
+    "releases": []
+  },
+  "jax": {
+    "name": "JAX",
+    "releases": []
+  },
+  "mxnet": {
+    "name": "MXNet",
+    "releases": []
+  },
+  "numpy": {
+    "name": "NumPy",
+    "releases": []
+  },
+  "pytorch": {
+    "name": "PyTorch",
+    "releases": []
+  },
+  "tensorflow": {
+    "name": "TensorFlow",
+    "releases": []
+  }
+}
