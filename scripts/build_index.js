@@ -30,12 +30,10 @@
 
 // MODULES //
 
-var path = require( 'path' );
-var readDir = require( '@stdlib/fs-read-dir' ).sync;
-var readJSON = require( '@stdlib/fs-read-json' ).sync;
 var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
 var lowercase = require( '@stdlib/string-base-lowercase' );
+var DATA = require( './../data' );
 var TMPL = require( './templates' );
 var LIBRARIES = require( './libraries.json' );
 
@@ -44,12 +42,6 @@ var LIBRARIES = require( './libraries.json' );
 
 // Specify a maximum version:
 var MAX_VERSION = '*';
-
-// Directory containing compatibility data:
-var DATA_DIR = path.resolve( __dirname, '..', 'data' );
-
-// Regular expression to test if a file path corresponds to a JSON data file:
-var RE_JSON = /\.json$/;
 
 
 // FUNCTIONS //
@@ -270,34 +262,14 @@ function renderBody( data, columns, name, maxVersion ) {
 * @throws {Error} unexpected error
 */
 function main() {
-	var files;
 	var html;
 	var tmp;
 	var f;
 	var i;
 
-	// Retrieve the list of compatibility files...
-	tmp = readDir( DATA_DIR );
-	if ( tmp instanceof Error ) {
-		throw tmp;
-	}
-	if ( tmp.length === 0 ) {
-		throw new Error( 'unexpected error. Unable to resolve data files.' );
-	}
-	files = [];
-	for ( i = 0; i < tmp.length; i++ ) {
-		f = tmp[ i ];
-		if ( RE_JSON.test( f ) ) {
-			files.push( path.join( DATA_DIR, f ) );
-		}
-	}
-	if ( files.length === 0 ) {
-		throw new Error( 'unexpected error. Unable to resolve data files.' );
-	}
 	tmp = [];
-	for ( i = 0; i < files.length; i++ ) {
-		f = readJSON( files[ i ] );
-		html = render( f, MAX_VERSION );
+	for ( i = 0; i < DATA.length; i++ ) {
+		html = render( DATA[ i ], MAX_VERSION );
 		if ( html ) {
 			tmp.push( html );
 		}
