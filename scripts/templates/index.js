@@ -40,7 +40,7 @@ var uppercase = require( '@stdlib/string-base-uppercase' );
 var FOPTS = {
 	'encoding': 'utf8'
 };
-var RE_HTML = /\.html/;
+var RE_HTML = /\.html$/;
 
 
 // FUNCTIONS //
