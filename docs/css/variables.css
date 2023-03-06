@@ -1,0 +1,91 @@
+/**
+* @license MIT
+*
+* Copyright (c) 2023 Python Data APIs Consortium.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+:root {
+	--background-primary: #ffffff;
+	--background-secondary: #f9f9fb;
+	--background-tertiary: #ffffff;
+
+	--border-primary: #cdcdcd;
+	--border-secondary: #cdcdcd;
+
+	--text-primary: #1b1b1b;
+	--text-secondary: #4e4e4e;
+	--text-primary-red: #d30038;
+	--text-primary-green: #007936;
+	--text-primary-blue: #0069c2;
+	--text-primary-yellow: #746a00;
+
+	--text-link: #0069c2;
+	--text-inactive: #9e9e9ea6;
+
+	--accent-primary: #0085f2;
+	--accent-secondary: #0085f2;
+	--accent-tertiary: rgba(0,133,242,.1);
+
+	--icon-primary: #696969;
+	--icon-secondary: #b3b3b3;
+	--icon-information: #0085f2;
+	--icon-warning: #ff2a51;
+	--icon-critical: #d30038;
+	--icon-success: #007936;
+
+	--code-background-inline: #f2f1f1;
+
+	--elem-radius: 0.25rem;
+
+	--icon-size: 2rem;
+
+	--font-fallback: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+	--font-body: Inter,var(--font-fallback);
+	--font-heading: Inter,var(--font-fallback);
+	--font-code: Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
+
+	--font-body-strong-weight: 600;
+
+	--base-font-size: 100%;
+	--type-smaller-font-size: 0.833rem;
+
+	--base-line-height: 1.2;
+	--intermediate-line-height: 1.75;
+	--font-content-line-height: 1.75;
+	--heading-line-height: var(--base-line-height);
+
+	--heading-letter-spacing: -0.031rem;
+
+	--type-heading-h1-font-size: 2.488rem;
+	--type-heading-h2-font-size: 2.074rem;
+	--type-heading-h3-font-size: 1.728rem;
+	--type-heading-h4-font-size: 1.44rem;
+	--type-heading-h5-font-size: 1.2rem;
+}
+
+@media screen and (min-width: 769px) {
+	:root {
+		--type-heading-h1: 600 var(--type-heading-h1-font-size) /var(--heading-line-height) var(--font-heading);
+		--type-heading-h2: 500 var(--type-heading-h2-font-size) /var(--heading-line-height) var(--font-heading);
+		--type-heading-h3: 300 var(--type-heading-h3-font-size) /var(--heading-line-height) var(--font-heading);
+		--type-heading-h4: 400 var(--type-heading-h4-font-size) /var(--heading-line-height) var(--font-heading);
+	}
+}

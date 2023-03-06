@@ -1,0 +1,157 @@
+/**
+* @license MIT
+*
+* Copyright (c) 2023 Python Data APIs Consortium.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+.compat-wrapper {
+	--base-font-size: 16px;
+	--type-smaller-font-size: 14px;
+	--icon-size: 1.5rem;
+}
+
+.compat-wrapper {
+	font-size: 16px;
+	margin: 0;
+	max-width: 100%;
+	margin-bottom: 3em;
+	margin-top: 4em;
+}
+
+.compat-wrapper .compat-heading {
+	color: rgba(0,0,0,.54);
+	font-size: 1.5625rem;
+	line-height: 1.3;
+	font-weight: 300;
+	letter-spacing: -.01em;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.compat-wrapper .compat-cta {
+	text-decoration: underline;
+	text-decoration-color: var(--text-link);
+	margin-left: 0.1rem;
+}
+
+.compat-wrapper section {
+	margin-bottom: 0.2rem;
+}
+
+.compat-wrapper .table-container {
+	margin: 0;
+	width: 100%!important;
+}
+
+.compat-wrapper .table-container-inner {
+	margin: 0;
+}
+
+.compat-wrapper figure {
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+
+.compat-wrapper table td,
+.compat-wrapper table th {
+	vertical-align: bottom;
+	padding: 0.5rem 1.4rem;
+	padding-bottom: 0.2rem;
+}
+
+.compat-wrapper .compat-table tbody tr th {
+	padding: 0.5rem 0.5rem;
+}
+
+.compat-wrapper .compat-cell-text-wrapper {
+	gap: 0rem;
+}
+
+.compat-wrapper .compat-head-txt-label {
+	left: calc(50% - 0.3rem);
+	padding-top: 0.5rem;
+}
+
+.compat-wrapper .compat-legend {
+	margin-left: 1.5rem;
+}
+
+.compat-wrapper .icon.icon-yes,
+.compat-wrapper .icon.icon-preview,
+.compat-wrapper .icon.icon-no,
+.compat-wrapper .icon.icon-partial {
+	background-size: 0.8rem 0.8rem;
+}
+
+.compat-wrapper .icon {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.compat-wrapper .icon.icon-cupy {
+	background-size: 1.25rem 1.25rem;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-dask {
+	background-size: 1.5rem 1.5rem;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-jax {
+	background-size: 1.5rem 1.5rem;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-jax {
+	background-size: 1.5rem 1.5rem;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-numpy {
+	background-size: 1.5rem 1.5rem;
+	background-position: right;
+}
+
+.compat-wrapper .icon.icon-pytorch {
+	background-size: 1.5rem 1.5rem;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-tensorflow {
+	background-size: 1.5rem 1.5rem;
+	background-position: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 769px) {
+	.compat-table tbody th {
+		width: 30%;
+	}
+
+	.compat-table td.compat-support > button {
+		padding: 0.25rem 0.25rem;
+	}
+}

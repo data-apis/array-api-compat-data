@@ -1,0 +1,402 @@
+/**
+* @license MIT
+*
+* Copyright (c) 2023 Python Data APIs Consortium.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+.compat-wrapper .button,
+.compat-wrapper button {
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	border: none;
+}
+
+.compat-wrapper .compat-table {
+	border: 1px solid var(--border-primary);
+	border-collapse: separate;
+	border-radius: var(--elem-radius);
+	border-spacing: 0;
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.compat-wrapper .compat-table tbody tr {
+	height: 3rem;
+}
+
+.compat-wrapper .compat-table td,
+.compat-wrapper .compat-table th {
+	border-width: 1px;
+	border-bottom: 1px solid var(--border-secondary);
+	border-left: 1px solid var(--border-secondary);
+	border-right: 0 solid var(--border-secondary);
+	border-top: 0 solid var(--border-secondary);
+	font-weight: 500;
+	padding: 0;
+}
+
+.compat-wrapper .compat-table th {
+	background: var(--background-tertiary);
+	padding: 0.4rem;
+	vertical-align: bottom;
+}
+
+.compat-wrapper .compat-table tbody tr th {
+	border-left-width: 0;
+	vertical-align: middle;
+}
+
+.compat-wrapper .compat-libraries td {
+	border-width: 0 0 1px;
+}
+
+.compat-wrapper .compat-libraries th {
+	text-align: center;
+}
+
+.compat-wrapper .compat-table-row-header {
+	align-items: baseline;
+	display: inline-flex;
+	width: 100%;
+}
+
+.compat-wrapper .compat-table-row-header code {
+	overflow: hidden;
+}
+
+.compat-wrapper .compat-head-txt-label {
+	position: relative;
+	left: calc(50% - 0.5rem);
+
+	padding-top: 0.5rem;
+
+	line-height: 1;
+
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+
+	white-space: nowrap;
+
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+
+.compat-wrapper .compat-head-icon-symbol {
+	margin-bottom: 0.3rem;
+}
+
+.compat-wrapper .code-example,
+.compat-wrapper code,
+.compat-wrapper pre {
+	border-radius: var(--elem-radius);
+	font-family: var(--font-code);
+	font-size: var(--type-smaller-font-size);
+}
+
+.compat-wrapper .compat-support {
+	text-align: center;
+	vertical-align: middle;
+}
+
+..compat-wrapper compat-table tbody .compat-support {
+	vertical-align: top;
+}
+
+.compat-wrapper .compat-table tbody .compat-support button {
+	cursor: pointer;
+	width: 100%;
+}
+
+.compat-wrapper .compat-table tbody .compat-support.compat-supports-no > button > span {
+	color: var(--text-primary-red);
+}
+
+.compat-wrapper .compat-table tbody .compat-support.compat-supports-partial > button > span {
+	color: var(--text-primary-yellow);
+}
+
+.compat-wrapper .compat-table tbody .compat-support.compat-supports-preview > button > span {
+	color: var(--text-primary-blue);
+}
+
+.compat-wrapper .compat-table tbody .compat-support.compat-supports-yes > button > span {
+	color: var(--text-primary-green);
+}
+
+.compat-wrapper .compat-table tbody .compat-history td {
+	border-left-width: 0;
+}
+
+.compat-wrapper .compat-table .compat-supports {
+	margin-bottom: 1rem;
+}
+
+.compat-wrapper .compat-table .compat-supports .icon-wrap {
+	background: var(--background-primary);
+}
+
+.compat-wrapper .compat-table .compat-supports.compat-supports-removed-partial .compat-cell-text-copy {
+	color: var(--text-primary-yellow);
+}
+
+.compat-wrapper .compat-table .icon-wrap .compat-support-level {
+	clip: rect(0 0 0 0);
+	border: 0;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute!important;
+	width: 1px;
+}
+
+.compat-wrapper .compat-table .compat-support > button > .icon-wrap {
+	display: block;
+}
+
+.compat-wrapper .compat-table .compat-support.compat-supports-removed-partial .compat-cell-text-copy {
+	color: var(--text-primary-red);
+}
+
+.compat-wrapper .compat-table .compat-feature-depth-2 {
+	border-left-width: 8px;
+}
+
+.compat-wrapper .compat-table .compat-feature-depth-3 {
+	border-left-width: 16px;
+}
+
+.compat-wrapper .compat-level-no {
+	background-color: var(--icon-critical);
+}
+
+.compat-wrapper .compat-level-preview {
+	background-color: var(--icon-information);
+}
+
+.compat-wrapper .compat-legend {
+	padding: 0 2.5rem;
+}
+
+.compat-wrapper .compat-legend-items-container {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: var(--type-smaller-font-size);
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.compat-wrapper .compat-legend-tip {
+	font-size: var(--type-smaller-font-size);
+	font-style: italic;
+	margin-bottom: 1rem;
+	margin-top: 0;
+}
+
+.compat-wrapper .compat-legend-item {
+	align-items: center;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.compat-wrapper .compat-legend-item-dt {
+	display: flex;
+}
+
+.compat-wrapper .compat-libraries th {
+	text-align: center;
+}
+
+.compat-wrapper .compat-libraries td {
+	border-width: 0 0 1px;
+}
+
+.compat-wrapper .compat-notes-list {
+	margin: 0.5rem 0;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+
+.compat-wrapper .compat-notes-list:before {
+	background: var(--border-primary);
+	content: "";
+	height: calc(100% - 0.25rem);
+	left: 7px;
+	margin-top: 0.25rem;
+	position: absolute;
+	width: 2px;
+	z-index: -1;
+}
+
+/* Cover the last bit of the grey line above. */
+.compat-wrapper .compat-notes-list .compat-notes-wrapper:last-child dd:last-child {
+	position: relative;
+}
+
+.compat-wrapper .compat-notes-list .compat-notes-wrapper:last-child dd:last-child:before {
+	background: var(--background-primary);
+	bottom: 0;
+	content: "";
+	height: calc(100% - 6px);
+	left: 7px;
+	position: absolute;
+	width: 2px;
+	z-index: -1;
+}
+
+.compat-wrapper .compat-notes-list .compat-version-label {
+	display: inline;
+}
+
+.compat-wrapper .compat-notes-list abbr {
+	margin-right: 4px;
+}
+
+.compat-wrapper .compat-notes-list dd {
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	text-indent: -1.5rem;
+}
+
+.compat-wrapper .compat-notes-list dd:last-child {
+	margin-bottom: 2rem;
+}
+
+.compat-wrapper .compat-notes-wrapper {
+	color: var(--text-primary);
+	margin-bottom: 1rem;
+}
+
+.compat-wrapper .compat-notes-wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.compat-wrapper dl.compat-notes-list dt.compat-supports {
+	margin-top: 1rem;
+}
+
+.compat-wrapper dl.compat-notes-list dt.compat-supports:first-child {
+	margin-top: 0;
+}
+
+.compat-wrapper dl.compat-notes-list dd.compat-supports-dd {
+	margin-bottom: 1rem;
+}
+
+.compat-wrapper dl.compat-notes-list dd.compat-supports-dd :last-child {
+	margin-bottom: 0;
+}
+
+.compat-wrapper .visually-hidden,
+.compat-wrapper .offscreen,
+.compat-wrapper .only-icon span {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	white-space: nowrap !important;
+	width: 1px !important;
+}
+
+.compat-wrapper .compat-table-row-header code {
+	overflow: hidden;
+}
+
+.compat-wrapper .compat-table-row-header .left-side,
+.compat-wrapper .compat-table-row-header .right-side {
+	overflow: hidden;
+	white-space: pre;
+}
+
+/* Can only flex-shrink and not flex-grow ie the "slider" in a sliding glass door */
+.compat-wrapper .compat-table-row-header .left-side {
+	flex: 0 1 auto;
+	text-overflow: ellipsis;
+}
+
+/* Can flex-grow and not flex-shrink as its the stationary portion */
+.compat-wrapper .compat-table-row-header .right-side {
+	flex: 1 0 auto;
+}
+
+.compat-wrapper .compat-table-row-header .compat-icons {
+	display: flex;
+	gap: 0.5rem;
+	margin-top: 0.25rem;
+}
+
+.compat-wrapper .compat-legend dd,
+.compat-wrapper .compat-legend dt {
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+.compat-wrapper .compat-legend .compat-supports-dd {
+	margin: 0;
+}
+
+.compat-wrapper .compat-cell-text-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.compat-wrapper .compat-timeline-cell-text-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.compat-wrapper .compat-cell-text-copy {
+	color: var(--text-primary);
+	display: flex;
+	gap: 0.5rem;
+}
+
+.compat-wrapper .compat-supports-yes .compat-cell-text-copy {
+	color: var(--text-primary-green);
+}
+
+.compat-wrapper .compat-supports-no .compat-cell-text-copy {
+	color: var(--text-primary-red);
+}
+
+.compat-wrapper .compat-supports-partial .compat-cell-text-copy {
+	color: var(--text-primary-yellow);
+}
+
+.compat-wrapper .compat-cell-icons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.compat-wrapper .compat-table .compat-support-level,
+.compat-wrapper .compat-table .compat-library-name {
+	display: none;
+}
