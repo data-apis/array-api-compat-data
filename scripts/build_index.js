@@ -34,12 +34,7 @@ var replace = require( '@stdlib/string-replace' );
 var DATA = require( './../data' );
 var TMPL = require( './templates' );
 var render = require( './render' );
-
-
-// VARIABLES //
-
-// Specify a maximum version:
-var MAX_VERSION = '*';
+var config = require( './config.json' );
 
 
 // MAIN //
@@ -58,7 +53,7 @@ function main() {
 
 	tmp = [];
 	for ( i = 0; i < DATA.length; i++ ) {
-		html = render( DATA[ i ], MAX_VERSION );
+		html = render( DATA[ i ], config.max_version );
 		if ( html ) {
 			tmp.push( html );
 		}
