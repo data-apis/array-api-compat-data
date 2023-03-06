@@ -37,6 +37,7 @@ var readFile = require( '@stdlib/fs-read-file' ).sync;
 var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
 var lowercase = require( '@stdlib/string-base-lowercase' );
+var LIBRARIES = require( './libraries.json' );
 
 
 // VARIABLES //
@@ -76,6 +77,21 @@ var LEGEND = readFile( path.join( TMPL_DIR, 'legend.html' ), FOPTS );
 
 
 // FUNCTIONS //
+
+/**
+* Returns a canonicalized library name.
+*
+* @private
+* @param {string} name - library name
+* @returns {string} canonical name
+*/
+function libraryName( name ) {
+	var o = LIBRARIES[ lowercase( name ) ];
+	if ( o ) {
+		return o.name;
+	}
+	return name;
+}
 
 /**
 * Renders HTML content for provided compatibility data.
@@ -159,7 +175,7 @@ function renderHead( fields ) {
 	out = [];
 	for ( i = 0; i < fields.length; i++ ) {
 		f = fields[ i ];
-		tmp = replace( TABLE_COLUMN_HEADER, '{{NAME}}', f );
+		tmp = replace( TABLE_COLUMN_HEADER, '{{NAME}}', libraryName( f ) );
 		tmp = replace( tmp, '{{LOWERCASE_NAME}}', lowercase( f ) );
 		out.push( tmp );
 	}
