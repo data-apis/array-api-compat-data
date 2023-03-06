@@ -39,7 +39,7 @@ var replace = require( '@stdlib/string-replace' );
 var FOPTS = {
 	'encoding': 'utf8'
 };
-var RE_CSS = /\.css/;
+var RE_CSS = /\.css$/;
 
 
 // FUNCTIONS //
