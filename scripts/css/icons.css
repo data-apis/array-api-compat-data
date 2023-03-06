@@ -1,0 +1,179 @@
+/**
+* @license MIT
+*
+* Copyright (c) 2023 Python Data APIs Consortium.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*/
+
+.compat-wrapper .icon {
+	display: inline-block;
+
+	flex-shrink: 0;
+	vertical-align: middle;
+
+	background-color: var(--icon-primary);
+
+	-webkit-mask-position: center;
+	mask-position: center;
+
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+
+	height: 2rem;
+	height: var(--icon-size);
+	width: 2rem;
+	width: var(--icon-size);
+
+	color: var(--icon-primary);
+}
+
+.compat-wrapper .compat-table-row-header .compat-icons .icon {
+	background-color: var(--icon-secondary);
+}
+
+.compat-wrapper .compat-table-row-header .compat-icons .icon:hover {
+	background-color: var(--icon-primary);
+}
+
+.compat-wrapper .compat-legend-item-dt .icon {
+	background-color: var(--icon-primary);
+}
+
+.compat-wrapper .compat-notes-list .compat-supports-dd .icon {
+	background: var(--border-primary);
+	border: 3px solid var(--background-primary);
+	border-radius: 50%;
+	mask-image: none;
+}
+
+.compat-wrapper .compat-notes-list .compat-level-yes.icon.icon-yes {
+	background-color: var(--icon-success);
+
+	-webkit-mask-image: url("../img/yes.svg"); /* FIXME: yes-circle.svg */
+	mask-image: url("../img/yes.svg"); /* FIXME: yes-circle.svg */
+}
+
+.compat-wrapper .compat-table .compat-support .icon.icon-removed-partial {
+	background-color: var(--icon-critical);
+
+	-webkit-mask-image: url("../img/no.svg");
+	mask-image: url("../img/no.svg");
+}
+
+.compat-wrapper .icon.icon-yes {
+	/*-webkit-mask-image: url("../img/yes.svg");
+	mask-image: url("../img/yes.svg");*/
+	background-color: transparent;
+	background-image: url("../img/yes.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+}
+
+.compat-wrapper .icon.icon-no {
+	/*-webkit-mask-image: url("../img/no.svg");
+	mask-image: url("../img/no.svg");*/
+	background-color: transparent;
+	background-image: url("../img/no.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+}
+
+.compat-wrapper .icon.icon-preview {
+	/*-webkit-mask-image: url("../img/preview.svg");
+	mask-image: url("../img/preview.svg");*/
+	background-color: transparent;
+	background-image: url("../img/preview.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.1rem 1.1rem;
+}
+
+.compat-wrapper .icon.icon-partial {
+	/*-webkit-mask-image: url("../img/partial.svg");
+	mask-image: url("../img/partial.svg");*/
+	background-color: transparent;
+	background-image: url("../img/partial.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+}
+
+.compat-wrapper .icon.icon-unknown {
+	/*-webkit-mask-image: url("../img/unknown.svg");
+	mask-image: url("../img/unknown.svg");*/
+	background-color: transparent;
+	background-image: url("../img/unknown.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1rem 1rem;
+}
+
+.compat-wrapper .icon.icon-cupy {
+	background-color: transparent;
+	background-image: url("../img/cupy_logo_icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5rem 1.5rem;
+}
+
+.compat-wrapper .icon.icon-dask {
+	background-color: transparent;
+	background-image: url("../img/dask_logo_icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-jax {
+	background-color: transparent;
+	background-image: url("../img/jax_logo.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-mxnet {
+	background-color: transparent;
+	background-image: url("../img/mxnet_logo_icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1.5rem 1.5rem;
+}
+
+.compat-wrapper .icon.icon-numpy {
+	background-color: transparent;
+	background-image: url("../img/numpy_logo_icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-pytorch {
+	background-color: transparent;
+	background-image: url("../img/pytorch_logo_icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.compat-wrapper .icon.icon-tensorflow {
+	background-color: transparent;
+	background-image: url("../img/tensorflow_logo_icon.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
