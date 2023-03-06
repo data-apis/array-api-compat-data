@@ -33,10 +33,12 @@
     "url": "https://github.com/data-apis/array-api-compat-data/issues"
   },
   "devDependencies": {
+    "@stdlib/cli-ctor": "^0.0.3",
     "@stdlib/fs-read-dir": "^0.0.8",
     "@stdlib/fs-read-file": "^0.0.8",
     "@stdlib/fs-read-json": "^0.0.7",
     "@stdlib/fs-write-file": "^0.0.8",
+    "@stdlib/process-cwd": "^0.0.8",
     "@stdlib/string-base-lowercase": "^0.1.0",
     "@stdlib/string-base-uppercase": "^0.0.2",
     "@stdlib/string-format": "^0.0.3",
