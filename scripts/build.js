@@ -33,18 +33,14 @@
 var path = require( 'path' );
 var readDir = require( '@stdlib/fs-read-dir' ).sync;
 var readJSON = require( '@stdlib/fs-read-json' ).sync;
-var readFile = require( '@stdlib/fs-read-file' ).sync;
 var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
 var lowercase = require( '@stdlib/string-base-lowercase' );
+var TMPL = require( './templates' );
 var LIBRARIES = require( './libraries.json' );
 
 
 // VARIABLES //
-
-var FOPTS = {
-	'encoding': 'utf8'
-};
 
 // Specify a maximum version:
 var MAX_VERSION = '*';
@@ -52,28 +48,8 @@ var MAX_VERSION = '*';
 // Directory containing compatibility data:
 var DATA_DIR = path.resolve( __dirname, '..', 'data' );
 
-// Directory containing template data:
-var TMPL_DIR = path.resolve( __dirname, 'templates' );
-
 // Regular expression to test if a file path corresponds to a JSON data file:
 var RE_JSON = /\.json$/;
-
-// Templates...
-var INDEX_HTML = readFile( path.join( TMPL_DIR, 'index.html' ), FOPTS );
-var COMPAT_SECTION = readFile( path.join( TMPL_DIR, 'compat_section.html' ), FOPTS );
-var TABLE_CONTAINER = readFile( path.join( TMPL_DIR, 'table_container.html' ), FOPTS );
-var TABLE = readFile( path.join( TMPL_DIR, 'table.html' ), FOPTS );
-var TABLE_HEAD = readFile( path.join( TMPL_DIR, 'table_head.html' ), FOPTS );
-var TABLE_COLUMN_HEADER = readFile( path.join( TMPL_DIR, 'table_column_header.html' ), FOPTS );
-var TABLE_BODY = readFile( path.join( TMPL_DIR, 'table_body.html' ), FOPTS );
-var TABLE_ROW = readFile( path.join( TMPL_DIR, 'table_row.html' ), FOPTS );
-var TABLE_ROW_HEADER = readFile( path.join( TMPL_DIR, 'table_row_header.html' ), FOPTS );
-var SUPPORTS_NO = readFile( path.join( TMPL_DIR, 'supports_no.html' ), FOPTS );
-var SUPPORTS_PARTIAL = readFile( path.join( TMPL_DIR, 'supports_partial.html' ), FOPTS );
-var SUPPORTS_PREVIEW = readFile( path.join( TMPL_DIR, 'supports_preview.html' ), FOPTS );
-var SUPPORTS_UNKNOWN = readFile( path.join( TMPL_DIR, 'supports_unknonwn.html' ), FOPTS );
-var SUPPORTS_YES = readFile( path.join( TMPL_DIR, 'supports_yes.html' ), FOPTS );
-var LEGEND = readFile( path.join( TMPL_DIR, 'legend.html' ), FOPTS );
 
 
 // FUNCTIONS //
@@ -119,10 +95,10 @@ function render( data, maxVersion ) {
 	url = d.__compat.spec_url;
 
 	// Render compatibility data:
-	out = replace( COMPAT_SECTION, '{{NAME}}', name );
+	out = replace( TMPL.COMPAT_SECTION, '{{NAME}}', name );
 	out = replace( out, '{{URL}}', url );
 	out = replace( out, '{{TABLE}}', renderCompat( d, name, maxVersion ) );
-	out = replace( out, '{{LEGEND}}', LEGEND );
+	out = replace( out, '{{LEGEND}}', TMPL.LEGEND );
 
 	return out;
 }
@@ -152,11 +128,11 @@ function renderCompat( data, name, maxVersion ) {
 	body = renderBody( data, libs, name, maxVersion );
 
 	// Render the table:
-	table = replace( TABLE, '{{HEAD}}', head );
+	table = replace( TMPL.TABLE, '{{HEAD}}', head );
 	table = replace( table, '{{BODY}}', body );
 
 	// Wrap the table in a container element:
-	return replace( TABLE_CONTAINER, '{{TABLE}}', table );
+	return replace( TMPL.TABLE_CONTAINER, '{{TABLE}}', table );
 }
 
 /**
@@ -175,11 +151,11 @@ function renderHead( fields ) {
 	out = [];
 	for ( i = 0; i < fields.length; i++ ) {
 		f = fields[ i ];
-		tmp = replace( TABLE_COLUMN_HEADER, '{{NAME}}', libraryName( f ) );
+		tmp = replace( TMPL.TABLE_COLUMN_HEADER, '{{NAME}}', libraryName( f ) );
 		tmp = replace( tmp, '{{LOWERCASE_NAME}}', lowercase( f ) );
 		out.push( tmp );
 	}
-	return replace( TABLE_HEAD, '{{HEADERS}}', out.join( '\n' ) );
+	return replace( TMPL.TABLE_HEAD, '{{HEADERS}}', out.join( '\n' ) );
 }
 
 /**
@@ -241,7 +217,7 @@ function renderBody( data, columns, name, maxVersion ) {
 		}
 
 		// Render the row header:
-		th = replace( TABLE_ROW_HEADER, '{{NAME}}', n );
+		th = replace( TMPL.TABLE_ROW_HEADER, '{{NAME}}', n );
 		th = replace( th, '{{DEPTH}}', d.toString() );
 
 		// Render the row cells:
@@ -255,19 +231,19 @@ function renderBody( data, columns, name, maxVersion ) {
 			col = columns[ j ];
 			o = support[ col ];
 			if ( o === null ) {
-				tmpl = SUPPORTS_NO;
+				tmpl = TMPL.SUPPORTS_NO;
 			} else if ( o === void 0 ) {
-				tmpl = SUPPORTS_UNKNOWN;
+				tmpl = TMPL.SUPPORTS_UNKNOWN;
 			} else {
 				status = o[ 0 ].status;
 
 				// TODO: handle "deprecated" status
 				if ( status.experimental ) {
-					tmpl = SUPPORTS_PREVIEW;
+					tmpl = TMPL.SUPPORTS_PREVIEW;
 				} else if ( status.partial_implementation ) {
-					tmpl = SUPPORTS_PARTIAL;
+					tmpl = TMPL.SUPPORTS_PARTIAL;
 				} else {
-					tmpl = SUPPORTS_YES;
+					tmpl = TMPL.SUPPORTS_YES;
 				}
 			}
 			c = replace( tmpl, '{{NAME}}', col );
@@ -276,12 +252,12 @@ function renderBody( data, columns, name, maxVersion ) {
 			tc.push( c );
 		}
 		// Render the row:
-		row = replace( TABLE_ROW, '{{HEADER}}', th );
+		row = replace( TMPL.TABLE_ROW, '{{HEADER}}', th );
 		row = replace( row, '{{CELLS}}', tc.join( '\n' ) );
 
 		rows.push( row );
 	}
-	return replace( TABLE_BODY, '{{ROWS}}', rows.join( '\n' ) );
+	return replace( TMPL.TABLE_BODY, '{{ROWS}}', rows.join( '\n' ) );
 }
 
 
@@ -326,7 +302,7 @@ function main() {
 			tmp.push( html );
 		}
 	}
-	f = replace( INDEX_HTML, '{{TABLES}}', tmp.join( '\n' ) );
+	f = replace( TMPL.INDEX, '{{TABLES}}', tmp.join( '\n' ) );
 	console.log( f );
 }
 
