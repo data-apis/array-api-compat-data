@@ -35,6 +35,7 @@ var writeFile = require( '@stdlib/fs-write-file' ).sync;
 var replace = require( '@stdlib/string-replace' );
 var objectKeys = require( '@stdlib/utils-keys' );
 var format = require( '@stdlib/string-format' );
+var CLI = require( '@stdlib/cli-ctor' );
 var DATA = require( './../data' );
 var TMPL = require( './templates' );
 var STYLESHEETS = require( './css' );
@@ -47,6 +48,13 @@ var config = require( './config.json' );
 
 var FOPTS = {
 	'encoding': 'utf8'
+};
+
+// CLI options:
+var CLI_OPTS = {
+	'string': [
+		'max-version'
+	]
 };
 
 // Resolve the path to the output build directory:
@@ -63,14 +71,31 @@ var BUILD_DIR = path.resolve( __dirname, '..', 'build', 'embed' );
 */
 function main() {
 	var styles;
+	var flags;
 	var fpath;
 	var html;
 	var tmpl;
 	var name;
 	var tmp;
+	var cli;
 	var d;
+	var v;
 	var i;
 
+	// Create a command-line interface:
+	cli = new CLI({
+		'options': CLI_OPTS
+	});
+
+	// Get any provided command-line options:
+	flags = cli.flags();
+	if ( flags[ 'max-version' ] ) {
+		v = flags[ 'max-version' ];
+	} else {
+		v = config.max_version;
+	}
+
+	// Load stylesheets used to render an embedded compatibility table:
 	styles = [];
 	for ( i = 0; i < stylesheets.length; i++ ) {
 		tmp = STYLESHEETS[ stylesheets[ i ] ];
@@ -82,11 +107,13 @@ function main() {
 	styles = styles.join( '\n' );
 	styles = replace( styles, /\.\.\/img/g, '../../_static/images/compat' );
 
+	// Update the HTML template for displaying an embedded compatibility table:
 	tmpl = replace( TMPL.EMBED, '{{STYLES}}', styles );
 
+	// For each API, render a compatibility table and write to disk:
 	for ( i = 0; i < DATA.length; i++ ) {
 		d = DATA[ i ];
-		html = render( d, config.max_version );
+		html = render( d, v );
 		if ( html ) {
 			tmp = replace( tmpl, '{{TABLE}}', html );
 
