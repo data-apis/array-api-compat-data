@@ -18,17 +18,7 @@
         ],
         "dask": null,
         "jax": null,
-        "mxnet": [
-          {
-            "version_added": "2.0.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": false
-            },
-            "notes": ""
-          }
-        ],
+        "mxnet": null,
         "numpy": [
           {
             "version_added": "1.22.0",

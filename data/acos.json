@@ -18,17 +18,7 @@
         ],
         "dask": null,
         "jax": null,
-        "mxnet": [
-          {
-            "version_added": "2.0.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": false
-            },
-            "notes": ""
-          }
-        ],
+        "mxnet": null,
         "numpy": [
           {
             "version_added": "1.22.0",
@@ -40,7 +30,17 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+        "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "tensorflow": null
       },
       "status": {
