@@ -145,7 +145,7 @@
 	background-position: center;
 }
 
-.compat-wrapper .compat-notes-list abbr {
+.compat-wrapper .compat-notes-list abbr.only-icon {
 	margin-right: 0;
 }
 
