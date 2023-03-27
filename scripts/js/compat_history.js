@@ -55,7 +55,7 @@
 		for ( i = 0; i < buttons.length; i++ ) {
 			el = buttons[ i ];
 			el.addEventListener( 'click', toggleTimeline );
-			el.setAttribute( 'data-live', 'true' );
+			el.setAttribute( 'data-live', 'true' ); // Note: this allows us to include multiple scripts in the page without registering multiple listeners per button
 		}
 	}
 
