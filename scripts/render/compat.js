@@ -28,11 +28,18 @@
 
 // MODULES //
 
+var remark = require( 'remark' );
+var toHTML = require( 'remark-html' );
 var objectKeys = require( '@stdlib/utils-keys' );
 var replace = require( '@stdlib/string-replace' );
 var lowercase = require( '@stdlib/string-base-lowercase' );
 var TMPL = require( './../templates' );
 var LIBRARIES = require( './../libraries.json' );
+
+
+// VARIABLES //
+
+var transform = remark().use( toHTML ).processSync;
 
 
 // FUNCTIONS //
@@ -50,6 +57,32 @@ function libraryName( name ) {
 		return o.name;
 	}
 	return name;
+}
+
+/**
+* Returns a library version date.
+*
+* @private
+* @param {string} name - library name
+* @param {string} version - version
+* @returns {string} release date
+*/
+function releaseDate( name, version ) {
+	var list;
+	var o;
+	var i;
+
+	o = LIBRARIES[ lowercase( name ) ];
+	if ( o === void 0 ) {
+		return '(unknown)';
+	}
+	list = o.releases;
+	for ( i = 0; i < list.length; i++ ) {
+		if ( list[ i ].version === version ) {
+			return list[ i ].date;
+		}
+	}
+	return '(unknown)';
 }
 
 /**
@@ -166,9 +199,7 @@ function renderBody( data, columns, name, maxVersion ) {
 			c = replace( tmpl, '{{NAME}}', col );
 			c = replace( c, '{{LOWERCASE_NAME}}', lowercase( col ) );
 			c = replace( c, '{{RELEASE}}', ( o ) ? ( o[ 0 ].version_added || '' ) : '' );
-
-			// FIXME: replace {{RELEASE_DATE}}
-
+			c = replace( c, '{{RELEASE_DATE}}', ( o ) ? releaseDate( col, o[ 0 ].version_added || '' ) : '(unknown)' );
 			c = replace( c, '{{HISTORY}}', renderHistory( col, o || [], columns.length+1 ) );
 
 			tc.push( c );
@@ -232,10 +263,8 @@ function renderHistory( name, history, ncols ) {
 			c = replace( tmpl, /\n/g, '' );
 			c = replace( c, '{{NAME}}', name );
 			c = replace( c, '{{RELEASE}}', o.version_added );
-
-			// FIXME: replace {{RELEASE_DATE}}
-
-			c = replace( c, '{{NOTES}}', notes );
+			c = replace( c, '{{RELEASE_DATE}}', releaseDate( name, o.version_added ) );
+			c = replace( c, '{{NOTES}}', transform( notes ).toString() );
 			cells.push( c );
 		}
 	}
