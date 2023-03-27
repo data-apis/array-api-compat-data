@@ -145,12 +145,16 @@
 	background-position: center;
 }
 
+.compat-wrapper dl.compat-notes-list dd.compat-supports-dd {
+	margin-bottom: 0.5rem;
+}
+
 .compat-wrapper .compat-notes-list abbr.only-icon {
 	margin-right: 0;
 }
 
 .compat-wrapper .compat-notes-list .icon {
-	width: 0.75rem;
+	width: 0.77rem;
 	height: 0.75rem;
 }
 
@@ -158,7 +162,7 @@
 .compat-wrapper .compat-notes-list .icon.icon-preview,
 .compat-wrapper .compat-notes-list .icon.icon-no,
 .compat-wrapper .compat-notes-list .icon.icon-partial {
-	background-size: 0.75rem 0.75rem;
+	background-size: 0.72rem 0.72rem;
 }
 
 /* MEDIA QUERIES */
