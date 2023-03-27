@@ -16,13 +16,15 @@
   "main": "",
   "directories": {},
   "scripts": {
-    "build": "npm run build:index && npm run build:css && npm run build:embed",
+    "build": "npm run build:index && npm run build:css && npm run build:js && npm run build:embed",
     "build:index": "node ./scripts/build_index.js > ./docs/index.html",
     "build:embed": "npm run clean:embed && mkdir -p ./build/embed && node ./scripts/build_embed.js",
     "build:css": "npm run clean:css && mkdir ./docs/css && find ./scripts/css -name '*.css' -exec cp -p '{}' './docs/css' ';'",
+    "build:js": "npm run clean:js && mkdir ./docs/js && find ./scripts/js -name '*.js' -exec cp -p '{}' './docs/js' ';'",
     "clean": "npm run clean:css && npm run clean:embed",
     "clean:css": "rm -rf ./docs/css",
-    "clean:embed": "rm -rf ./build/embed"
+    "clean:embed": "rm -rf ./build/embed",
+    "clean:js": "rm -rf ./docs/js"
   },
   "homepage": "https://github.com/data-apis/array-api-compat-data",
   "repository": {
