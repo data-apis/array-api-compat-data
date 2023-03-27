@@ -132,7 +132,7 @@
                 "deprecated": false,
                 "partial_implementation": true
               },
-              "notes": "copy=False` is not implemented"
+              "notes": "`copy=False` is not implemented"
             }
           ],
           "dask": null,
@@ -146,7 +146,7 @@
                 "deprecated": false,
                 "partial_implementation": true
               },
-              "notes": "copy=False` is not implemented"
+              "notes": "`copy=False` is not implemented"
             }
           ],
           "pytorch": null,
