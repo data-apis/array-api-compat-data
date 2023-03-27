@@ -305,11 +305,18 @@
 }
 
 .compat-wrapper dl.compat-notes-list dd.compat-supports-dd {
+	display: flex;
+	flex-direction: row;
+
 	margin-bottom: 1rem;
 }
 
 .compat-wrapper dl.compat-notes-list dd.compat-supports-dd :last-child {
 	margin-bottom: 0;
+}
+
+.compat-wrapper dl.compat-notes-list dd.compat-supports-dd .compat-supports-notes {
+	text-indent: 0;
 }
 
 .compat-wrapper .compat-timeline-cell-text-wrapper {
