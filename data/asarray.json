@@ -16,9 +16,29 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
+        "dask": [
+          {
+            "version_added": "(PR)",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Available in draft PR [#8750](https://github.com/dask/dask/pull/8750) via `dask.array_api`."
+          }
+        ],
         "jax": null,
-        "mxnet": null,
+        "mxnet": [
+          {
+            "version_added": "(2.0.0)",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Available in a draft branch via `mxnet.numpy`."
+          }
+        ],
         "numpy": [
           {
             "version_added": "1.22.0",
@@ -30,7 +50,17 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+        "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "tensorflow": null
       },
       "status": {
@@ -48,28 +78,58 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "(PR)",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
           "jax": null,
-          "mxnet": null,
+          "mxnet": [
+            {
+              "version_added": "(2.0.0)",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
           "numpy": [
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
           "tensorflow": null
         },
         "status": {
@@ -88,28 +148,58 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "(PR)",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
           "jax": null,
-          "mxnet": null,
+          "mxnet": [
+            {
+              "version_added": "(2.0.0)",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
           "numpy": [
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
           "tensorflow": null
         },
         "status": {
@@ -128,28 +218,58 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": true
               },
-              "notes": "`copy=False` is not implemented"
+              "notes": "`copy=False` is not implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "(PR)",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`copy=False` is not implemented."
+            }
+          ],
           "jax": null,
-          "mxnet": null,
+          "mxnet": [
+          {
+            "version_added": "(2.0.0)",
+            "status": {
+              "experimental": true,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "Provisionally implemented."
+          }
+        ],
           "numpy": [
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": true
               },
-              "notes": "`copy=False` is not implemented"
+              "notes": "`copy=False` is not implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
           "tensorflow": null
         },
         "status": {
