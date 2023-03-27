@@ -51,10 +51,11 @@
 		var el;
 		var i;
 
-		buttons = document.querySelectorAll( '.compat-wrapper .compat-support button' );
+		buttons = document.querySelectorAll( '.compat-wrapper .compat-support button[data-live="false"]' );
 		for ( i = 0; i < buttons.length; i++ ) {
 			el = buttons[ i ];
 			el.addEventListener( 'click', toggleTimeline );
+			el.setAttribute( 'data-live', 'true' );
 		}
 	}
 
