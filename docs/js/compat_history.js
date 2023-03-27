@@ -84,19 +84,21 @@
 		// Get the parent table cell:
 		cell = el.closest( 'td.compat-support' );
 
-		// Resolve the history status:
-		status = ( cell.getAttribute( 'aria-expanded' ) === 'true' ) ? true : false;
-		status = !status;
-		cell.setAttribute( 'aria-expanded', status.toString() );
+		// Toggle the history status:
+		status = ( cell.getAttribute( 'aria-expanded' ) === 'true' ) ? 'false' : 'true';
 
 		// If history is already shown, remove it...
-		if ( status === false ) {
-			row = row.nextSibling;
+		if ( status === 'false' ) {
+			row = row.nextElementSibling;
 			if ( row.classList.contains( 'compat-history' ) ) {
 				row.remove();
 			}
+			cell.setAttribute( 'aria-expanded', status );
 			return;
 		}
+		// Remove any displayed timelines:
+		collapseAll( el.closest( 'table.compat-table' ) );
+
 		// Get history HTML:
 		html = cell.getAttribute( 'data-history' );
 		if ( html === '' ) {
@@ -106,5 +108,43 @@
 
 		// Insert a history element:
 		row.insertAdjacentHTML( 'afterend', html );
+
+		// Update the ARIA attribute:
+		cell.setAttribute( 'aria-expanded', status );
+	}
+
+	/**
+	* Removes all timelines in a table.
+	*
+	* @private
+	* @param {DOMElement} table - DOM element
+	*/
+	function collapseAll( table ) {
+		var status;
+		var cells;
+		var list;
+		var row;
+		var sib;
+		var i;
+		var j;
+
+		list = table.querySelectorAll( 'tr.compat-history' );
+		for ( i = 0; i < list.length; i++ ) {
+			row = list[ i ];
+
+			// Get the previous row:
+			sib = row.previousElementSibling;
+
+			// Remove the timeline:
+			row.remove();
+
+			// Find any cells which indicate that their timelines are expanded:
+			cells = sib.querySelectorAll( 'td[aria-expanded="true"]' );
+
+			// Update the ARIA attribute for each cell:
+			for ( j = 0; j < cells.length; j++ ) {
+				cells[ i ].setAttribute( 'aria-expanded', 'false' );
+			}
+		}
 	}
 })();
