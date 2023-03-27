@@ -166,15 +166,87 @@ function renderBody( data, columns, name, maxVersion ) {
 			c = replace( tmpl, '{{NAME}}', col );
 			c = replace( c, '{{LOWERCASE_NAME}}', lowercase( col ) );
 			c = replace( c, '{{RELEASE}}', ( o ) ? ( o[ 0 ].version_added || '' ) : '' );
+
+			// FIXME: replace {{RELEASE_DATE}}
+
+			c = replace( c, '{{HISTORY}}', renderHistory( col, o || [], columns.length+1 ) );
+
 			tc.push( c );
 		}
 		// Render the row:
 		row = replace( TMPL.TABLE_ROW, '{{HEADER}}', th );
 		row = replace( row, '{{CELLS}}', tc.join( '\n' ) );
+		row = replace( row, '{{NUM_COLUMNS}}', ( columns.length+1 ).toString() );
 
 		rows.push( row );
 	}
 	return replace( TMPL.TABLE_BODY, '{{ROWS}}', rows.join( '\n' ) );
+}
+
+/**
+* Renders support history.
+*
+* @private
+* @param {string} name - library name
+* @param {Array<Object>} history - support history
+* @param {number} ncols - number of table columns
+* @returns {string} HTML string
+*/
+function renderHistory( name, history, ncols ) {
+	var cells;
+	var notes;
+	var tmpl;
+	var hist;
+	var len;
+	var o;
+	var c;
+	var i;
+
+	len = history.length;
+
+	cells = [];
+	if ( len === 0 ) {
+		tmpl = TMPL.NOTES_SUPPORTS_NO;
+		notes = 'No support';
+		c = replace( tmpl, /\n/g, '' );
+		c = replace( c, '{{NAME}}', name );
+		c = replace( c, '{{NOTES}}', notes );
+		cells.push( c );
+	} else {
+		// Iterate over history items in reverse order, as more recent items occur first in the history list...
+		for ( i = len-1; i >= 0; i-- ) {
+			o = history[ i ];
+			notes = '';
+
+			// TODO: handle "deprecated" status
+			if ( o.status.experimental ) {
+				tmpl = TMPL.NOTES_SUPPORTS_PREVIEW;
+				notes = o.notes || 'Preview support';
+			} else if ( o.status.partial_implementation ) {
+				tmpl = TMPL.NOTES_SUPPORTS_PARTIAL;
+				notes = o.notes || 'Partial support';
+			} else {
+				tmpl = TMPL.NOTES_SUPPORTS_YES;
+				notes = o.notes || 'Full support';
+			}
+			c = replace( tmpl, /\n/g, '' );
+			c = replace( c, '{{NAME}}', name );
+			c = replace( c, '{{RELEASE}}', o.version_added );
+
+			// FIXME: replace {{RELEASE_DATE}}
+
+			c = replace( c, '{{NOTES}}', notes );
+			cells.push( c );
+		}
+	}
+	hist = replace( TMPL.HISTORY, /\n/g, '' );
+	hist = replace( hist, '{{NOTES}}', cells.join( '\n' ) );
+	hist = replace( hist, '{{NUM_COLUMNS}}', ncols.toString() );
+
+	tmpl = replace( TMPL.TABLE_HISTORY_ROW, /\n/g, '' );
+	tmpl = replace( tmpl, '{{CELLS}}', hist );
+	tmpl = replace( tmpl, '"', '&quot;' );
+	return tmpl;
 }
 
 
