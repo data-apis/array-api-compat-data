@@ -1,7 +1,12 @@
 {
   "cupy": {
     "name": "CuPy",
-    "releases": []
+    "releases": [
+      {
+        "version": "10.0.0",
+        "date": "2021-12-08"
+      }
+    ]
   },
   "dask":  {
     "name": "Dask",
@@ -13,11 +18,21 @@
   },
   "mxnet": {
     "name": "MXNet",
-    "releases": []
+    "releases": [
+      {
+        "version": "2.0.0",
+        "date": "TBD"
+      }
+    ]
   },
   "numpy": {
     "name": "NumPy",
-    "releases": []
+    "releases": [
+      {
+        "version": "1.22.0",
+        "date": "2021-12-31"
+      }
+    ]
   },
   "pytorch": {
     "name": "PyTorch",
