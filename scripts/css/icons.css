@@ -68,7 +68,7 @@
 	mask-image: none;
 }
 
-.compat-wrapper .compat-notes-list .compat-level-yes.icon.icon-yes {
+.compat-wrapper .compat-notes-list .icon.icon-yes {
 	/*background-color: var(--icon-success);
 
 	-webkit-mask-image: url("../img/yes_circle.svg");
