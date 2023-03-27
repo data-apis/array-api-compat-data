@@ -230,10 +230,6 @@
 	border-width: 0 0 1px;
 }
 
-
-
-/* NOTES */
-
 .compat-wrapper .compat-notes-list {
 	margin: 0.5rem 0;
 	position: relative;
@@ -324,10 +320,6 @@
 	flex-direction: row;
 	gap: 0.5rem;
 }
-
-/* END NOTES */
-
-
 
 .compat-wrapper .visually-hidden,
 .compat-wrapper .offscreen,
