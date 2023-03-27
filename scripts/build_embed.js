@@ -38,6 +38,7 @@ var format = require( '@stdlib/string-format' );
 var CLI = require( '@stdlib/cli-ctor' );
 var DATA = require( './../data' );
 var TMPL = require( './templates' );
+var SCRIPTS = require( './js' );
 var STYLESHEETS = require( './css' );
 var stylesheets = require( './css/embed.json' );
 var render = require( './render/embed.js' );
@@ -107,8 +108,11 @@ function main() {
 	styles = styles.join( '\n' );
 	styles = replace( styles, /\.\.\/img/g, '../../_static/images/compat' );
 
-	// Update the HTML template for displaying an embedded compatibility table:
+	// Insert stylesheets into an HTML template for displaying an embedded compatibility table:
 	tmpl = replace( TMPL.EMBED, '{{STYLES}}', styles );
+
+	// Insert scripts:
+	tmpl = replace( tmpl, '{{SCRIPT}}', SCRIPTS[ 'compat_history' ] );
 
 	// For each API, render a compatibility table and write to disk:
 	for ( i = 0; i < DATA.length; i++ ) {
