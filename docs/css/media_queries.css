@@ -78,6 +78,15 @@
 	.compat-wrapper .compat-table td.compat-support > button {
 		padding: 0.25rem;
 	}
+
+	.compat-wrapper .compat-table tr.compat-history-desktop {
+		display: table-row;
+	}
+
+	.compat-wrapper .compat-notes-list {
+		margin-left: 20%;
+		width: auto;
+	}
 }
 
 @media screen and (min-width: 769px) {

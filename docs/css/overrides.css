@@ -26,6 +26,7 @@
 	--base-font-size: 16px;
 	--type-smaller-font-size: 14px;
 	--icon-size: 1.5rem;
+	--elem-radius: 0.1rem;
 }
 
 .compat-wrapper {
