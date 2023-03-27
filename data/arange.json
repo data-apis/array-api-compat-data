@@ -30,7 +30,17 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+        "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "tensorflow": null
       },
       "status": {
@@ -69,7 +79,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
@@ -109,7 +129,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
@@ -149,7 +179,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
@@ -189,7 +229,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
@@ -229,7 +279,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
