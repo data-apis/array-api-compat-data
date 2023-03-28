@@ -30,13 +30,302 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+        "pytorch": [
+          {
+            "version_added": "1.12.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Returned object does not support `dtype` attribute."
+          },
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Returned object does not support `smallest_normal` attribute."
+          }
+        ],
         "tensorflow": null
       },
       "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
+      }
+    },
+    "bits": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Number of bits occupied by the real-valued floating-point data type.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "eps": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Difference between 1.0 and the next smallest representable real-valued floating-point number larger than 1.0 according to the IEEE 754 standard.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "max": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Largest representable real-valued number.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "min": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Smallest representable real-valued number.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "smallest_normal": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Smallest positive real-valued floating-point number with full precision.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.12.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "dtype": {
+      "__compat": {
+        "version_added": "2022.12",
+        "description": "Real-valued floating-point data type.",
+        "support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
       }
     }
   }

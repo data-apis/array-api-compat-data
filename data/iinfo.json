@@ -11,7 +11,7 @@
             "status": {
               "experimental": true,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
             "notes": "Provisionally available via `cupy.array_api`."
           }
@@ -25,18 +25,198 @@
             "status": {
               "experimental": true,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+        "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Returned object does not support a `dtype` attribute."
+          }
+        ],
         "tensorflow": null
       },
       "status": {
         "standard_track": true,
         "experimental": false,
         "deprecated": false
+      }
+    },
+    "bits": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Number of bits occupied by the type.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "max": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Largest representable number.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "min": {
+      "__compat": {
+        "version_added": "2021.12",
+        "description": "Smallest representable number.",
+        "support": {
+          "cupy": [
+            {
+              "version_added": "10.0.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": [
+            {
+              "version_added": "1.22.0",
+              "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
+      }
+    },
+    "dtype": {
+      "__compat": {
+        "version_added": "2022.12",
+        "description": "Integer data type.",
+        "support": {
+          "cupy": null,
+          "dask": null,
+          "jax": null,
+          "mxnet": null,
+          "numpy": null,
+          "pytorch": null,
+          "tensorflow": null
+        },
+        "status": {
+          "standard_track": true,
+          "experimental": false,
+          "deprecated": false
+        }
       }
     }
   }
