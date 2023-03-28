@@ -10,7 +10,12 @@
   },
   "dask":  {
     "name": "Dask",
-    "releases": []
+    "releases": [
+      {
+        "version": "2023.1.0",
+        "date": "2023-01-13"
+      }
+    ]
   },
   "jax": {
     "name": "JAX",
