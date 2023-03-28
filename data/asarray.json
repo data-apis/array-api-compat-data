@@ -27,7 +27,17 @@
             "notes": "`device` and `copy` keyword arguments are not supported."
           }
         ],
-        "jax": null,
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`device` and `copy` keyword arguments are not supported."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
@@ -86,7 +96,17 @@
               "notes": ""
             }
           ],
-          "jax": null,
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {

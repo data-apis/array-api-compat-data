@@ -27,7 +27,17 @@
             "notes": "`device` keyword argument is not supported."
           }
         ],
-        "jax": null,
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`device` keyword argument is not supported."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {

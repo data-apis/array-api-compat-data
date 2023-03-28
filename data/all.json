@@ -27,7 +27,17 @@
             "notes": ""
           }
         ],
-        "jax": null,
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
@@ -86,7 +96,17 @@
               "notes": ""
             }
           ],
-          "jax": null,
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
@@ -146,7 +166,17 @@
               "notes": ""
             }
           ],
-          "jax": null,
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {

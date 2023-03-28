@@ -17,7 +17,17 @@
           }
         ],
         "dask": null,
-        "jax": null,
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`stable` and `descending` keyword arguments are not supported."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
@@ -30,7 +40,7 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-      "pytorch": [
+        "pytorch": [
           {
             "version_added": "1.13.0",
             "status": {
@@ -75,7 +85,17 @@
             }
           ],
           "dask": null,
-          "jax": null,
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
