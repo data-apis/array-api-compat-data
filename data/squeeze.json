@@ -16,7 +16,17 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
+        "dask": [
+          {
+            "version_added": "2023.1.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "jax": null,
         "mxnet": null,
         "numpy": [
@@ -74,7 +84,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "jax": null,
           "mxnet": null,
           "numpy": [

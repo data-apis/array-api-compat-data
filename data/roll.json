@@ -16,7 +16,17 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
+        "dask": [
+          {
+            "version_added": "2023.1.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "jax": null,
         "mxnet": null,
         "numpy": [
@@ -38,7 +48,7 @@
               "deprecated": false,
               "partial_implementation": true
             },
-            "notes": "`shift` keyword argument is named `shifts`, and `axes` keyword argument is named `dims`."
+            "notes": "`shift` keyword argument is named `shifts`, and `axis` keyword argument is named `dims`."
           }
         ],
         "tensorflow": null
@@ -65,7 +75,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "jax": null,
           "mxnet": null,
           "numpy": [
@@ -99,7 +119,7 @@
         }
       }
     },
-    "axes": {
+    "axis": {
       "__compat": {
         "version_added": "2021.12",
         "description": "Axis (or axes) along which elements to shift.",
@@ -115,7 +135,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "jax": null,
           "mxnet": null,
           "numpy": [
@@ -137,7 +167,7 @@
                 "deprecated": false,
                 "partial_implementation": true
               },
-              "notes": "`axes` keyword argument is named `dims`."
+              "notes": "`axis` keyword argument is named `dims`."
             }
           ],
           "tensorflow": null
