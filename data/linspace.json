@@ -33,7 +33,7 @@
             "status": {
               "experimental": false,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
             "notes": "`device` keyword argument is not supported."
           }
