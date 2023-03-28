@@ -48,7 +48,7 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
@@ -62,7 +62,7 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
@@ -88,7 +88,7 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
@@ -102,7 +102,7 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
@@ -128,7 +128,7 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
@@ -142,7 +142,7 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },

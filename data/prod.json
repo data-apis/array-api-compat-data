@@ -48,11 +48,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -62,11 +62,11 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "pytorch": null,
@@ -88,11 +88,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -102,11 +102,11 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "pytorch": null,
@@ -128,11 +128,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -142,11 +142,11 @@
             {
               "version_added": "1.22.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "pytorch": null,
