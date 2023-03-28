@@ -32,13 +32,22 @@
         ],
       "pytorch": [
           {
-            "version_added": "1.11.0",
+            "version_added": "1.13.0",
             "status": {
               "experimental": false,
               "deprecated": false,
               "partial_implementation": false
             },
             "notes": ""
+          },
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`stable` keyword argument is not supported."
           }
         ],
         "tensorflow": null
