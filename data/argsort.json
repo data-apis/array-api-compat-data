@@ -30,7 +30,17 @@
             "notes": "Provisionally available via `numpy.array_api`."
           }
         ],
-        "pytorch": null,
+      "pytorch": [
+          {
+            "version_added": "1.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ],
         "tensorflow": null
       },
       "status": {
@@ -48,11 +58,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -62,6 +72,17 @@
             {
               "version_added": "1.22.0",
               "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
                 "experimental": false,
                 "deprecated": false,
                 "partial_implementation": false
@@ -69,7 +90,6 @@
               "notes": ""
             }
           ],
-          "pytorch": null,
           "tensorflow": null
         },
         "status": {
@@ -88,11 +108,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -102,6 +122,17 @@
             {
               "version_added": "1.22.0",
               "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
                 "experimental": false,
                 "deprecated": false,
                 "partial_implementation": false
@@ -109,7 +140,6 @@
               "notes": ""
             }
           ],
-          "pytorch": null,
           "tensorflow": null
         },
         "status": {
@@ -128,11 +158,11 @@
             {
               "version_added": "10.0.0",
               "status": {
-                "experimental": false,
+                "experimental": true,
                 "deprecated": false,
                 "partial_implementation": false
               },
-              "notes": ""
+              "notes": "Provisionally implemented."
             }
           ],
           "dask": null,
@@ -142,6 +172,17 @@
             {
               "version_added": "1.22.0",
               "status": {
+                "experimental": true,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "Provisionally implemented."
+            }
+          ],
+          "pytorch": [
+            {
+              "version_added": "1.13.0",
+              "status": {
                 "experimental": false,
                 "deprecated": false,
                 "partial_implementation": false
@@ -149,7 +190,6 @@
               "notes": ""
             }
           ],
-          "pytorch": null,
           "tensorflow": null
         },
         "status": {
