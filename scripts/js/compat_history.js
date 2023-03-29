@@ -23,7 +23,7 @@
 */
 
 /**
-* Wrapper for enabling history timelines with a compatibility table.
+* Wrapper for enabling history timelines within a compatibility table.
 *
 * @private
 */
