@@ -49,7 +49,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "pytorch": null,
+          "pytorch": [
+            {
+              "version_added": "1.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "tensorflow": null
         },
         "status": {
