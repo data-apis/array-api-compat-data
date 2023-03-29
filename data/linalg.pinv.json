@@ -41,7 +41,17 @@
             "notes": ""
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": "`rtol` keyword argument is named `rcond` and has a different default value."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
@@ -90,7 +100,17 @@
               "notes": ""
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": "`rtol` keyword argument is named `rcond` and has a different default value."
+            }
+          ]
         },
         "status": {
           "standard_track": true,
