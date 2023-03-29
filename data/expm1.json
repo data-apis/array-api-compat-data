@@ -61,17 +61,7 @@
             "notes": ""
           }
         ],
-        "tensorflow": [
-          {
-            "version_added": "2.11.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": false
-            },
-            "notes": ""
-          }
-        ]
+        "tensorflow": null
       },
       "status": {
         "standard_track": true,

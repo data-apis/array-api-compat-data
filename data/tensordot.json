@@ -61,7 +61,17 @@
             "notes": "`axes` keyword argument is named `dims`."
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`axes` keyword argument is required."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
@@ -130,7 +140,17 @@
               "notes": "`axes` keyword argument is named `dims`."
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`axes` keyword argument is required."
+            }
+          ]
         },
         "status": {
           "standard_track": true,

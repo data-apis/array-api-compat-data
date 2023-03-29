@@ -60,7 +60,17 @@
             "notes": "`stable` keyword argument is not supported."
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`descending` keyword argument is not supported. `stable` keyword argument has a different default value."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
@@ -119,7 +129,17 @@
               "notes": ""
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ]
         },
         "status": {
           "standard_track": true,
@@ -219,7 +239,17 @@
               "notes": ""
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`stable` keyword argument has a different default value."
+            }
+          ]
         },
         "status": {
           "standard_track": true,

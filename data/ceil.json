@@ -41,17 +41,7 @@
             "notes": ""
           }
         ],
-        "tensorflow": [
-          {
-            "version_added": "2.11.0",
-            "status": {
-              "experimental": false,
-              "deprecated": false,
-              "partial_implementation": true
-            },
-            "notes": "Limited data type support."
-          }
-        ]
+        "tensorflow": null
       },
       "status": {
         "standard_track": true,

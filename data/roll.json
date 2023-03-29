@@ -61,7 +61,17 @@
             "notes": "`shift` keyword argument is named `shifts`, and `axis` keyword argument is named `dims`."
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`axis` keyword argument is required."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
@@ -130,7 +140,17 @@
               "notes": "`shift` keyword argument is named `shifts`."
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ]
         },
         "status": {
           "standard_track": true,
@@ -200,7 +220,17 @@
               "notes": "`axis` keyword argument is named `dims`."
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`axis` keyword argument is required."
+            }
+          ]
         },
         "status": {
           "standard_track": true,

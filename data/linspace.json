@@ -61,7 +61,17 @@
             "notes": "`num` keyword argument is named `steps`."
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Limited keyword argument support."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
@@ -130,7 +140,17 @@
               "notes": "`num` keyword argument is named `steps`."
             }
           ],
-          "tensorflow": null
+          "tensorflow": [
+            {
+              "version_added": "2.11.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ]
         },
         "status": {
           "standard_track": true,
