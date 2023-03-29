@@ -26,9 +26,9 @@
             "status": {
               "experimental": false,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
-            "notes": ""
+            "notes": "Limited data type support."
           }
         ],
         "tensorflow": null
