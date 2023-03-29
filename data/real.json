@@ -21,7 +21,17 @@
         "mxnet": null,
         "numpy": null,
         "pytorch": null,
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": false
+            },
+            "notes": ""
+          }
+        ]
       },
       "status": {
         "standard_track": true,
