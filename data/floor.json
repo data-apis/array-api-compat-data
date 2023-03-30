@@ -16,8 +16,28 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
-        "jax": null,
+        "dask": [
+          {
+            "version_added": "2023.1.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Limited data type support. Integer data types are promoted to floating-point."
+          }
+        ],
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Limited data type support. Integer data types are promoted to floating-point."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
