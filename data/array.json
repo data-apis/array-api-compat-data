@@ -22,9 +22,9 @@
             "status": {
               "experimental": false,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
-            "notes": ""
+            "notes": "Not all properties and methods are implemented."
           }
         ],
         "jax": [
@@ -33,9 +33,9 @@
             "status": {
               "experimental": false,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
-            "notes": ""
+            "notes": "Not all properties and methods are implemented."
           }
         ],
         "mxnet": null,
@@ -61,7 +61,17 @@
             "notes": ""
           }
         ],
-        "tensorflow": null
+        "tensorflow": [
+          {
+            "version_added": "2.11.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "Not all properties and methods are implemented."
+          }
+        ]
       },
       "status": {
         "standard_track": true,
