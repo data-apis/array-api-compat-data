@@ -16,8 +16,28 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
-        "jax": null,
+        "dask": [
+          {
+            "version_added": "2023.1.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`device` keyword argument is not supported."
+          }
+        ],
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`device` keyword argument is not supported."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
@@ -65,8 +85,28 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
-          "jax": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
@@ -115,8 +155,28 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
-          "jax": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
@@ -165,7 +225,17 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "jax": null,
           "mxnet": null,
           "numpy": [
@@ -215,8 +285,28 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
-          "jax": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": false
+              },
+              "notes": ""
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
