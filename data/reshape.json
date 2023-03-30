@@ -16,8 +16,28 @@
             "notes": "Provisionally available via `cupy.array_api`."
           }
         ],
-        "dask": null,
-        "jax": null,
+        "dask": [
+          {
+            "version_added": "2023.1.0",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`shape` keyword argument is named `newshape`."
+          }
+        ],
+        "jax": [
+          {
+            "version_added": "0.4.7",
+            "status": {
+              "experimental": false,
+              "deprecated": false,
+              "partial_implementation": true
+            },
+            "notes": "`shape` keyword argument is named `newshape`."
+          }
+        ],
         "mxnet": null,
         "numpy": [
           {
@@ -75,8 +95,28 @@
               "notes": "Provisionally implemented."
             }
           ],
-          "dask": null,
-          "jax": null,
+          "dask": [
+            {
+              "version_added": "2023.1.0",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`shape` keyword argument is named `newshape`."
+            }
+          ],
+          "jax": [
+            {
+              "version_added": "0.4.7",
+              "status": {
+                "experimental": false,
+                "deprecated": false,
+                "partial_implementation": true
+              },
+              "notes": "`shape` keyword argument is named `newshape`."
+            }
+          ],
           "mxnet": null,
           "numpy": [
             {
