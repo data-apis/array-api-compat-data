@@ -46,6 +46,7 @@
     "@stdlib/string-format": "^0.0.3",
     "@stdlib/string-replace": "^0.0.11",
     "@stdlib/utils-keys": "^0.0.7",
+    "ajv": "^8.12.0",
     "remark": "^11.0.1",
     "remark-html": "^10.0.0"
   },
