@@ -36,9 +36,9 @@
             "status": {
               "experimental": false,
               "deprecated": false,
-              "partial_implementation": false
+              "partial_implementation": true
             },
-            "notes": ""
+            "notes": "Does not support type promotion."
           }
         ],
         "tensorflow": [
